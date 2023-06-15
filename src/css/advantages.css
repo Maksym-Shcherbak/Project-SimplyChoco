@@ -1,0 +1,131 @@
+.list {
+	list-style: none;
+	/* display: flex; */
+	/* gap: 24px;  */
+}
+.link {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.advantages {
+	background-color: #1e1823;
+}
+
+/* +++++++++++++++++++++++++MOBILE++++++++++++++++++++ */
+@media screen and (min-width: 428px) {
+	.container {
+		width: 428px;
+		height: 792px;
+	}
+	.advantages {
+		padding-bottom: 37px;
+	}
+	.advantages-container {
+		width: 308px;
+	}
+	.advantages-title {
+		padding-top: 104px;
+		padding-bottom: 18px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.22;
+		color: #ffffff;
+	}
+	.advantages-description {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.21;
+		letter-spacing: -0.02em;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.advantages-cycle {
+		position: absolute;
+		margin-bottom: 0;
+		margin-right: 0;
+	}
+	.advantages-general-icon {
+		position: absolute;
+		margin-top: 20px;
+		padding: 0px;
+		gap: 7.3px;
+		width: 62px;
+		height: 62px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 365px;
+	}
+	.advantages-list-icon {
+		transform: translate(60%, 60%);
+	}
+}
+/* +++++++++++++++++++++++++/MOBILE++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++TABLET++++++++++++++++++++ */
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+	.advantages {
+		/* padding: 50px; */
+		height: 620px;
+	}
+	.advantages-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 88px;
+		padding-top: 50px;
+	}
+	/* .advantages-general-icon {
+		padding-top: 50px;
+	} */
+}
+/* +++++++++++++++++++++++++/TABLET++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++DESKTOP++++++++++++++++++++ */
+@media screen and (min-width: 1157px) {
+	.container {
+		width: 1157px;
+		/* height: auto; */
+	}
+	.advantages {
+		height: 344px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.advantages-title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.22;
+		color: #ffffff;
+	}
+	.advantages-description {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.21;
+		letter-spacing: -0.02em;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.advantages-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+}
+/* +++++++++++++++++++++++++/DESKTOP++++++++++++++++++++ */
