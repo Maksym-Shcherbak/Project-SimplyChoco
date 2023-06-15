@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build --base=/Simply-Choco/",
+		"build": "vite build --base=/Project-SimplyChoco/",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
