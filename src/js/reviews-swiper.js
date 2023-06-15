@@ -1,21 +1,40 @@
 const swiper = new Swiper(".swiper", {
 	// Optional parameters
-	direction: "horizontal",
+	slidesPerView: 1,
+	spaceBetween: 16,
 	loop: true,
-
-	// If we need pagination
+	direction: "horizontal",
 	pagination: {
 		el: ".swiper-pagination",
+		clickable: true,
 	},
 
-	// Navigation arrows
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+		},
+		1200: {
+			speed: 750,
+			slidesPerView: 3,
+			centeredSlides: true,
+			paginationClickable: true,
+			spaceBetween: 28,
+			grabCursor: true,
+			waitForTransition: false,
+		},
 	},
+	// allowSlidePrev: false,
 
-	// And if we need scrollbar
-	scrollbar: {
-		el: ".swiper-scrollbar",
-	},
+	// mousewheel: true,
+	// mousewheel: {
+	// 	invert: false,
+	// },
+	// on: {
+	// 	afterInit() {
+	// 		this.allowSlidePrev = this.realIndex !== 0;
+	// 	},
+	// 	slideChange() {
+	// 		this.allowSlidePrev = this.realIndex !== 0;
+	// 	},
+	// },
 });
