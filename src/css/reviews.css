@@ -6,13 +6,20 @@
 
 .reviews-title {
 	font-weight: 600;
-	font-size: 24px;
-	line-height: 1.17;
+	font-size: 20px;
+	line-height: 1.2;
 	text-align: center;
 	letter-spacing: -0.03em;
 	text-transform: uppercase;
 	color: var(--dark-text);
 	margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+	.reviews-title {
+		font-size: 24px;
+		line-height: 1.17;
+	}
 }
 
 .reviews-title-span {
@@ -21,15 +28,23 @@
 
 .reviews-button {
 	font-weight: 600;
-	font-size: 18px;
-	line-height: 1.22;
+	font-size: 14px;
+	line-height: 1.21;
 	color: var(--dark-text);
 	background-color: transparent;
 	border: 1px solid #fd9222;
 	border-radius: 100px;
-	padding: 14px 40px;
+	padding: 12px 28px;
 	display: block;
 	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.reviews-button {
+		font-size: 18px;
+		line-height: 1.22;
+		padding: 14px 40px;
+	}
 }
 
 .reviews-button:hover,

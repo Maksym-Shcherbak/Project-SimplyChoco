@@ -8,14 +8,8 @@
 	display: flex;
 }
 
-.reviewer-photo {
-	margin: 0 auto;
-	margin-bottom: 18px;
-	border-radius: 50%;
-}
-
 .reviews-card {
-	flex-basis: calc((100% - 56px) / 3);
+	flex-basis: 100%;
 	padding: 104px 24px 24px 24px;
 	background-color: var(--white-text);
 	border: 1px solid var(--border);
@@ -26,11 +20,23 @@
 	z-index: 0;
 }
 
+@media screen and (min-width: 1200px) {
+	.reviews-card {
+		flex-basis: calc((100% - 56px) / 3);
+	}
+}
+
 .reviewer {
 	margin: 0;
 	position: absolute;
 	top: -17%;
 	left: 22.2%;
+}
+
+.reviewer-photo {
+	margin: 0 auto;
+	margin-bottom: 18px;
+	border-radius: 50%;
 }
 
 .reviewer-name {
