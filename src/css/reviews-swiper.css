@@ -4,26 +4,18 @@
 	padding-top: 40px;
 }
 
-.reviews-list {
+.swiper-slide {
 	display: flex;
+	align-items: center;
 }
 
 .reviews-card {
-	flex-basis: 100%;
-	padding: 104px 24px 24px 24px;
+	padding: 104px 18px 24px 18px;
 	background-color: var(--white-text);
 	border: 1px solid var(--border);
 	box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 	border-radius: 15px;
-	margin-right: 28px;
 	position: relative;
-	z-index: 0;
-}
-
-@media screen and (min-width: 1200px) {
-	.reviews-card {
-		flex-basis: calc((100% - 56px) / 3);
-	}
 }
 
 .reviewer {
@@ -48,7 +40,8 @@
 }
 
 .reviews-card-text {
-	line-height: 1.29;
+	font-size: 14px;
+	line-height: 1.28;
 	text-align: center;
 	letter-spacing: -0.02em;
 	text-align: center;
