@@ -32,17 +32,14 @@
     margin-left: auto;
 }
 
-.subscribe-button {
-    font-family: inherit;
-    cursor: pointer;
-    padding: 12px 28px;
-    border-radius: 100px;
-}
 
-.sub-modal-opn-btn {
+.subscribe-modal-opn-btn {
     display: block;
     color: var(--white-text);
     background-color: var(--brand-color);
+    font-family: inherit;
+    padding: 12px 28px;
+    border-radius: 100px;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -62,7 +59,6 @@
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-mobile.jpg) ;
         max-width: 375px;
         height: 370px;
-        
     }
 }
 
@@ -81,7 +77,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         padding: 72px 0;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-tablet.jpg);
         max-width: 768px;
-        height: 370px;
     }
 
     .subscribe-title {
@@ -94,11 +89,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         max-width: 467px;
     }
 
-    .subscribe-button {
+    .subscribe-modal-opn-btn {
         padding: 14px 40px;
-    }
-
-    .sub-modal-opn-btn {
         min-width: 172px;
         height: 50px;
         font-size: 18px;
