@@ -1,0 +1,69 @@
+.swiper {
+	height: 300px;
+	margin-bottom: 50px;
+	padding-top: 40px;
+}
+
+.reviews-list {
+	display: flex;
+}
+
+.reviewer-photo {
+	margin: 0 auto;
+	margin-bottom: 18px;
+	border-radius: 50%;
+}
+
+.reviews-card {
+	flex-basis: calc((100% - 56px) / 3);
+	padding: 104px 24px 24px 24px;
+	background-color: var(--white-text);
+	border: 1px solid var(--border);
+	box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+	border-radius: 15px;
+	margin-right: 28px;
+	position: relative;
+	z-index: 0;
+}
+
+.reviewer {
+	margin: 0;
+	position: absolute;
+	top: -17%;
+	left: 22.2%;
+}
+
+.reviewer-name {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.33;
+	text-align: center;
+	color: var(--dark-text);
+}
+
+.reviews-card-text {
+	line-height: 1.29;
+	text-align: center;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: var(--gray-text);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 6px;
+}
+
+.swiper-pagination-bullet {
+	width: 13px;
+	height: 13px;
+	background-color: var(--border);
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	width: 28px;
+	height: 13px;
+	border-radius: 20%/35%;
+	background: var(--brand-color);
+}

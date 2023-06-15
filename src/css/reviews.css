@@ -1,0 +1,39 @@
+.reviews {
+	background-color: var(--light-background);
+	margin: 0 auto;
+	padding-bottom: 128px;
+}
+
+.reviews-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	color: var(--dark-text);
+	margin-bottom: 50px;
+}
+
+.reviews-title-span {
+	color: var(--brand-color);
+}
+
+.reviews-button {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.22;
+	color: var(--dark-text);
+	background-color: transparent;
+	border: 1px solid #fd9222;
+	border-radius: 100px;
+	padding: 14px 40px;
+	display: block;
+	margin: 0 auto;
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+	color: var(--white-text);
+	background-color: var(--brand-color);
+}
