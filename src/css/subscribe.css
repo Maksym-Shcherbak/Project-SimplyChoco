@@ -128,11 +128,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 }
 /* <------Backdrop-------> */
-/* .is-hidden {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
 .subscribe-modal {
     background-repeat: no-repeat;
     background-position: center;
