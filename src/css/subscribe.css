@@ -166,9 +166,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     position: absolute;
     top: 15px;
     right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     width: 24px;
     height: 24px;
+    border: none;
 }
 
 .sub-modal-close-icon {
