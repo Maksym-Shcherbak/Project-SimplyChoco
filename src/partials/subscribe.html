@@ -9,24 +9,29 @@
 </section>
 <div class="subscribe-backdrop is-hidden" data-modal>
     <div class="subscribe-modal">
-        <button class="sub-modal-close-btn" type="button" data-modal-close>
-            <svg aria-label="icon-x-close" width="24" height="24">
+        <div class="sub-modal-background">
+            <button class="sub-modal-close-btn" type="button" data-modal-close>
+            <svg class="sub-modal-close-icon"
+            aria-label="icon-x-close"
+             width="24" 
+             height="24">
                 <use href="./icons-svg#icon-x-close"></use>
             </svg>
         </button>
     </div>
     <div class="subscribe-modal-form">
         <h2 class="sub-modal-title">EXPLORE OUR <span class="sub-modal-accent-title">NEW CHOCOLATE</span> FIRST!</h2>
-        <form>
-        <label for="user_email"></label>
-            <input 
-            type="email"
-            name="email"
-            id="user_email"
-            placeholder="Enter your email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
-            <button type="button">Submit</button>
-            </div>
-        </form>
+        <form class="subscribe-form">
+            <label class="sub-form-label">
+              <input type="email"
+               name="email" 
+               id="user_email" 
+               placeholder="Enter your email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">  
+            </label>
+            <button class="submit-button" type="submit">Submit</button>
+    </div>
+    </form>
+    </div>
     </div>
         
