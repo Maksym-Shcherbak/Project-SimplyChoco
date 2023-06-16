@@ -38,7 +38,7 @@
 
 	--dark-text: rgba(17, 17, 17, 1);
 	--gray-text: rgba(17, 17, 17, 0.7);
-	--white-text: rgba(255, 255, 255, 1);
+	--white-text: rgb(255, 255, 255);
 	--dark-background: rgba(30, 24, 35, 1);
 	--light-background: rgba(250, 250, 250, 1);
 	--brand-color: rgba(253, 146, 34, 1);
