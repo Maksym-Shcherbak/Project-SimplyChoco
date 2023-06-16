@@ -1,0 +1,107 @@
+.subscribe {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.subscribe-title {
+    color: var(--white-text);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    max-width: 291px;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+}
+
+.subscribe-suptitle {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: -0.02em;
+    max-width: 326px;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+}
+
+
+.subscribe-modal-opn-btn {
+    display: block;
+    color: var(--white-text);
+    background-color: var(--brand-color);
+    font-family: inherit;
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    min-width: 128px;
+    height: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+   
+
+}
+
+/* <-------Phone------> */
+@media screen and (max-width: 767px) {
+    .subscribe {
+        padding: 62px 0; 
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-mobile.jpg) ;
+        max-width: 375px;
+        height: 370px;
+    }
+}
+
+   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .subscribe {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-mobile@2x.jpg);
+  }
+}
+ 
+/* <-------Tablet--------> */
+
+@media screen and (min-width: 768px) {
+    .subscribe {
+        padding: 72px 0;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-tablet.jpg);
+        max-width: 768px;
+    }
+
+    .subscribe-title {
+        font-size: 24px;
+        line-height: 1.17;
+        max-width: 378px;
+    }
+
+    .subscribe-suptitle {
+        max-width: 467px;
+    }
+
+    .subscribe-modal-opn-btn {
+        padding: 14px 40px;
+        min-width: 172px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-tablet@2x.jpg);
+    }
+}
