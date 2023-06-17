@@ -71,5 +71,22 @@
 		flex-wrap: nowrap;
 		gap: 88px;
 	}
+	.advantages-item {
+		display: block;
+		position: relative;
+	}
+	.advantages-item::after {
+		content: "";
+		position: absolute;
+		right: 100%;
+		top: 50%;
+		/* right: 0; */
+		width: 124px;
+		height: 0px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		transform: rotate(90deg);
+
+		/* transform: translateY(50%, 50%); */
+	}
 }
 /* +++++++++++++++++++++++++/DESKTOP++++++++++++++++++++ */
