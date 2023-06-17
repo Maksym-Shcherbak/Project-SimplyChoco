@@ -49,6 +49,7 @@
 	--border: rgba(17, 17, 17, 0.1);
 	--input-border: rgba(17, 17, 17, 0.05);
 	--input-name: rgba(0, 0, 0, 1);
+	--advantage-text: rgba(250, 250, 250 0, 7);
 }
 
 * {
@@ -58,6 +59,19 @@
 .container {
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 @media screen and (min-width: 375px) {
