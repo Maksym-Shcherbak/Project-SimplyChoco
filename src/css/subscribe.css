@@ -1,0 +1,176 @@
+.subscribe {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 370px;
+}
+.subscribe-title {
+    color: var(--white-text);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    max-width: 291px;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+}
+
+.subscribe-suptitle {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: -0.02em;
+    max-width: 326px;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+}
+
+
+.subscribe-modal-opn-btn {
+    display: block;
+    color: var(--white-text);
+    background-color: var(--brand-color);
+    font-family: inherit;
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    min-width: 128px;
+    height: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    transition: background-color 500ms cubic-bezier(.17, .67, .83, .67);
+
+}
+
+.subscribe-modal-opn-btn:hover,
+.subscribe-modal-opn-btn:focus {
+    background-color: var(--pressed-state);
+    color: var(--brand-color);
+}
+
+/* <-------Phone------> */
+@media screen and (max-width: 767px) {
+    .subscribe {
+        padding: 62px 0; 
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-mobile.webp) ;
+        max-width: 375px;
+    }
+}
+
+   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .subscribe {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-mobile@2x.jpg);
+  }
+}
+ 
+/* <-------Tablet--------> */
+
+@media screen and (min-width: 768px) {
+    .subscribe {
+        padding: 72px 0;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-tablet.webp);
+        max-width: 768px;
+    }
+
+    .subscribe-title {
+        font-size: 24px;
+        line-height: 1.17;
+        max-width: 378px;
+    }
+
+    .subscribe-suptitle {
+        max-width: 467px;
+    }
+
+    .subscribe-modal-opn-btn {
+        padding: 14px 40px;
+        min-width: 172px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe-tablet@2x.webp);
+    }
+}
+
+/* <--------Desktop-------> */
+@media screen and (min-width: 1200px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe.webp);
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/subscribe-img/subcribe@2x.webp);
+    }
+}
+/* <------Backdrop-------> */
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.subscribe-modal {
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sub-modal-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--dark-text);
+}
+
+.sub-modal-accent-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+}
+
+@media screen and (max-width: 767px) {
+.subscribe-modal {
+    background-image: url(/img/subscribe-img/subcribe-modal/sub-modal-bg-mob.webp);
+    max-width: 311px;
+    height: 169px;
+
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .subscribe-modal {
+        background-image: url(/img/subscribe-img/subcribe-modal/sub-modal-bg-mob@2x.jpg);
+    }
+}
