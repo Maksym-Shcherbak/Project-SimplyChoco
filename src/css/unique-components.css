@@ -1,0 +1,227 @@
+/* опис МОБІЛЬНОІ ВЕРСІІ */
+/* .container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+@media screen and (min-width: 375px) {
+	.container {
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.unique-container {
+		margin: 0 auto;
+		padding-bottom: 128px;
+	}
+	.unique-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 19px;
+	}
+
+	.unique-header {
+		max-width: 283px;
+		max-height: 72px;
+	}
+} */
+
+.unique {
+	padding: 72px 0;
+}
+@media screen and (max-width: 768px) {
+	.unique-list-item {
+		margin-bottom: 20px;
+	}
+	.unique-list-item-last {
+		margin-bottom: 0;
+	}
+}
+
+.unique-header {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	color: #111111;
+
+	margin: 0 auto;
+	margin-bottom: 28px;
+}
+.color-taste {
+	color: var(--brand-color);
+}
+.unique-paragraf {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.28;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #111111;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	max-width: 335px;
+	/* max-height: 108px; */
+}
+
+.unique-overlay-img-wrapper {
+	width: 100%;
+	height: 270px;
+	border: 1px solid var(--brand-color);
+	border-radius: 15px;
+	padding: 28px 36px 82px 28px;
+	position: relative;
+	overflow: hidden;
+}
+.unique-color-orange {
+	background: var(--brand-color);
+}
+.unique-color-white {
+	background: #ffffff;
+}
+.unique-color-black {
+	background: var(--dark-background);
+}
+
+.unique-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	transform: translate(0, 100%);
+	padding: 20px;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.unique-card-link:hover .unique-overlay,
+.unique-card-link:focus .unique-overlay {
+	transform: translateY(0%);
+}
+.unique-name {
+	margin-top: 38px;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.28;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+.unique-name-black {
+	color: #111111;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.28;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+}
+.unique-heder-overlay {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	color: #111111;
+	margin-bottom: 8px;
+	text-align: start;
+}
+.unique-btns-overlay {
+	margin-bottom: 14px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 6px;
+}
+.unique-btn-overlay {
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	color: #111111;
+	background: #fafafa;
+
+	border: 1px solid var(--brand-color);
+	border-radius: 35px;
+	padding: 6px 16px;
+}
+.unique-btn-overlay-orange {
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	background: var(--brand-color);
+	border-radius: 35px;
+	border: none;
+	padding: 6px 16px;
+}
+.unique-paragraf-descrabe {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.28;
+	letter-spacing: -0.02em;
+	color: #111111;
+}
+/* oпис ПЛАНШЕТНОІ ВЕРСІІ */
+@media screen and(max-width:375px) {
+	.unique-list-item {
+		max-width: 335px;
+		margin-bottom: 20px;
+	}
+	.unique-list:list-child {
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: 767px) {
+	.unique {
+		padding: 100px 0;
+	}
+	.unique-list {
+		display: flex;
+
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 32px 32px;
+	}
+	.unique-list-item {
+		flex-basis: calc((100%-32px) / 2);
+	}
+	.unique-paragraf {
+		max-width: 486px;
+		/* max-height: 72px; */
+	}
+	.unique-header {
+		font-size: 24px;
+		line-height: 28px;
+		max-width: 411px;
+		/* max-height: 56px; */
+	}
+}
+
+/* опис ДЕСКТОПУ */
+@media screen and (min-width: 1200px) {
+	.unique {
+		padding: 128px 0;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.unique-list {
+		/* display: flex;
+		flex-direction: row; */
+		flex-wrap: nowrap;
+		/* justify-content: center;
+		gap: 19px; */
+	}
+	.unique-list-item {
+		flex-basis: calc((100%-57px) / 4);
+	}
+}
