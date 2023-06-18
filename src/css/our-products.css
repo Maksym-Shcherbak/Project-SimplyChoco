@@ -1,0 +1,24 @@
+.section-our-product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 50px;
+	position: absolute;
+	width: 1142px;
+
+	height: 442px;
+}
+
+.title-our {
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.17;
+	letter-spacing: -0.03em;
+	color: #111111;
+}
+
+.title-product {
+	color: #fd9222;
+}
