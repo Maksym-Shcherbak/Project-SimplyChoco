@@ -13,6 +13,11 @@
 	text-transform: uppercase;
 	color: var(--dark-text);
 	margin-bottom: 50px;
+	clear: both;
+}
+
+.animation-reviews {
+	clear: both;
 }
 
 @media screen and (min-width: 768px) {

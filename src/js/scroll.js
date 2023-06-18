@@ -15,3 +15,6 @@ $(document).ready(function () {
 		}
 	});
 });
+
+// initialization of aos
+AOS.init();
