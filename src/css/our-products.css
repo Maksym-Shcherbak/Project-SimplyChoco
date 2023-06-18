@@ -1,6 +1,6 @@
-.list {
+/* .list {
 	list-style: none;
-}
+} */
 
 .section-our-product {
 	display: flex;
@@ -8,10 +8,9 @@
 	align-items: center;
 	padding: 0px;
 	gap: 50px;
-	position: absolute;
-	width: 1142px;
 
 	height: 442px;
+	background-color: var(--light-background);
 }
 
 .title-our {
@@ -45,13 +44,13 @@
 }
 
 .our-product-img {
-	position: absolute;
-	left: 20px;
-	top: 32px;
+	margin-left: 20px;
+	margin-top: 32px;
+	margin-bottom: 8px;
 }
 
 .our-product-title-orange {
-	width: 81px;
+	text-align: center;
 	height: 24px;
 	font-family: "Montserrat";
 	font-style: normal;
@@ -65,7 +64,7 @@
 }
 
 .our-product-p {
-	width: 88px;
+	text-align: center;
 	height: 14px;
 	font-family: "Montserrat";
 	font-style: normal;
