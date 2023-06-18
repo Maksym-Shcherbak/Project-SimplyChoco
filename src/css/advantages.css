@@ -119,7 +119,25 @@
 		border: 1px solid rgba(255, 255, 255, 0.5);
 		transform: rotate(90deg);
 
-		/* transform: translateY(50%, 50%); */
+		transform: translateY(50%, 50%);
+	}
+	.advantages-item:first-child::after {
+		display: none;
 	}
 }
 /* +++++++++++++++++++++++++/DESKTOP++++++++++++++++++++ */
+@media screen {
+	html:not(.no-js) {
+		[data-aos^="rotate-in"][data-aos^="rotate-in"] {
+			backface-visibility: visible;
+			transition-property: transform;
+			/* transition-duration: 2s; */
+		}
+		[data-aos="rotate-in"] {
+			transform: perspective(2500px) rotateX(100deg);
+			&.aos-animate {
+				transform: perspective(2500px) rotateX(0);
+			}
+		}
+	}
+}
