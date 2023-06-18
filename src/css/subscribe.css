@@ -130,15 +130,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 /* <------Backdrop-------> */
 
-.body.modal-open {
+body.modal-open {
     overflow: hidden;
 }
     
-    /* .is-hidden {
+    .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
     .subscribe-backdrop {
     position: fixed;
     left: 0;
@@ -254,7 +254,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
  }
 
  .subscribe-modal-btn {
-    display: inline-block;
+    display: block;
     position: absolute;
     top: -1px;
     right: 0px;
