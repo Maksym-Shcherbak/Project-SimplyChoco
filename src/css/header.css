@@ -6,20 +6,18 @@
 	margin: 0;
 }
 
-.container {
+.flex-container {
+	display: flex;
+	align-items: center;
 	flex-direction: row;
 	padding: 0px;
 	gap: 188px;
-	position: absolute;
 	width: 1136px;
 	height: 24px;
 	left: 32px;
 	top: 24px;
 	margin: auto;
-}
-.flex-container {
-	display: flex;
-	align-items: center;
+	background-color: ffffff;
 }
 
 .link {
