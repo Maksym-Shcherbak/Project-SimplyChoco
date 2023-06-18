@@ -64,7 +64,6 @@
 	margin: 0 auto;
 	margin-bottom: 50px;
 	max-width: 335px;
-	/* max-height: 108px; */
 }
 
 .unique-overlay-img-wrapper {
@@ -72,7 +71,7 @@
 	height: 270px;
 	border: 1px solid var(--brand-color);
 	border-radius: 15px;
-	padding: 28px 36px 82px 28px;
+	padding: 28px 55px 70px 55px;
 	position: relative;
 	overflow: hidden;
 }
@@ -111,13 +110,8 @@
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
 }
-.unique-name-black {
+.unque-name-color-black {
 	color: #111111;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 1.28;
-	letter-spacing: -0.02em;
-	text-transform: uppercase;
 }
 .unique-heder-overlay {
 	font-weight: 600;
@@ -138,31 +132,25 @@
 	gap: 6px;
 }
 .unique-btn-overlay {
-	font-weight: 400;
-	font-size: 10px;
-	line-height: 1.2;
 	display: flex;
 	align-items: center;
 	color: #111111;
 	background: #fafafa;
-
 	border: 1px solid var(--brand-color);
 	border-radius: 35px;
 	padding: 6px 16px;
 }
-.unique-btn-overlay-orange {
+.unique-btn-overlay:hover,
+.unique-btn-overlay:focus {
+	color: #ffffff;
+	background-color: var(--brand-color);
+}
+.unique-btn-name {
 	font-weight: 400;
 	font-size: 10px;
 	line-height: 1.2;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #ffffff;
-	background: var(--brand-color);
-	border-radius: 35px;
-	border: none;
-	padding: 6px 16px;
 }
+
 .unique-paragraf-descrabe {
 	font-weight: 400;
 	font-size: 14px;
@@ -195,6 +183,7 @@
 	.unique-list-item {
 		flex-basis: calc((100%-32px) / 2);
 	}
+
 	.unique-paragraf {
 		max-width: 486px;
 		/* max-height: 72px; */
@@ -204,6 +193,20 @@
 		line-height: 28px;
 		max-width: 411px;
 		/* max-height: 56px; */
+	}
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+	.unique-list :nth-child(1) {
+		order: 1;
+	}
+	.unique-list :nth-child(2) {
+		order: 3;
+	}
+	.unique-list :nth-child(3) {
+		order: 4;
+	}
+	.unique-list :nth-child(4) {
+		order: 2;
 	}
 }
 
@@ -223,5 +226,8 @@
 	}
 	.unique-list-item {
 		flex-basis: calc((100%-57px) / 4);
+	}
+	.unique-overlay-img-wrapper {
+		padding: 28px 36px 82px 28px;
 	}
 }
