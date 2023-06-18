@@ -14,8 +14,8 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
 		
-		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-2832159d.js"></script>
-		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-4d4b061e.css">
+		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-22f5ba9a.js"></script>
+		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-f76c854e.css">
 	</head>
 	<body>
 		<header class="header">
@@ -620,27 +620,42 @@
 </section>
 <div class="subscribe-backdrop is-hidden" data-modal>
     <div class="subscribe-modal">
-        <button class="sub-modal-close-btn" type="button" data-modal-close>
-            <svg aria-label="icon-x-close" width="24" height="24">
-                <use href="./icons-svg#icon-x-close"></use>
+        <picture>
+            <source 
+            srcset="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-desk@2x-78f3582b.webp 2x" media="(min-width: 768px)"/>
+            <source 
+            srcset="/Project-SimplyChoco/assets/sub-modal-bg-mob-600e4f1f.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-mob@2x-80c3da08.webp 2x" media="(min-width: 280px)"/>
+        <img  class="sub-bg-photo" 
+        src="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp" alt="modal-bg-chocolate">
+    </picture>   
+         <button class="sub-modal-button" type="button" data-modal-close>
+            <svg class="sub-modal-close-icon" 
+            aria-label="icon-x-close" 
+            width="28"
+            height="28">
+                <use href="/Project-SimplyChoco/assets/icons-310e7fa0.svg#icon-x-close"></use>
             </svg>
-        </button>
-    </div>
+    </button>
     <div class="subscribe-modal-form">
-        <h2 class="sub-modal-title">EXPLORE OUR <span class="sub-modal-accent-title">NEW CHOCOLATE</span> FIRST!</h2>
-        <form>
-        <label for="user_email"></label>
-            <input 
-            type="email"
-            name="email"
-            id="user_email"
-            placeholder="Enter your email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
-            <button type="button">Submit</button>
-            </div>
-        </form>
-    </div>
+        <h2 class="sub-modal-title">EXPLORE OUR <br /> <span class="sub-modal-accent-title">NEW CHOCOLATE</span> FIRST!</h2>
+        <form class="subscribe-form">
+            <label class="subscribe-label" for="user_email">
+                <input 
+                class="subscribe-input-form"
+                type="email" 
+                name="email"
+                 id="user_email" 
+                 placeholder="Enter your email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required>
+            </label>
+            <button class="subscribe-modal-btn" type="submit">Subscribe</button>
+        </div>
         
+    </div>
+
+</div>
+
 		
 		
 		
