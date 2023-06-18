@@ -16,8 +16,7 @@
 	height: 24px;
 	left: 32px;
 	top: 24px;
-	margin: auto;
-	background-color: ffffff;
+	margin: 32px 0px 32px 24px;
 }
 
 .link {
@@ -25,6 +24,10 @@
 	text-decoration: none;
 	color: #111111;
 	cursor: pointer;
+}
+.link:hover,
+.link:focus {
+	color: #fd9222;
 }
 
 .logo {
@@ -41,7 +44,14 @@
 	align-items: center;
 	letter-spacing: -0.02em;
 	color: #111111;
-	padding-left: 15px;
+	padding-left: 188px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+}
+.header-list {
+	padding: 4px;
 }
 .nav {
 	float: right;
@@ -53,10 +63,11 @@
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
-
 	letter-spacing: -0.03em;
-
 	color: #111111;
+	position: relative;
+	padding-right: 99px;
+	padding-left: 32px;
 }
 .logo-part-two {
 	font-style: normal;
@@ -67,6 +78,9 @@
 	padding-left: 15px;
 	vertical-align: middle;
 	display: flex;
+}
+.social-ikon {
+	position: absolute;
 }
 
 /*Mobile menu*/
