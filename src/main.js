@@ -1,3 +1,4 @@
+import "./js/how-its-made.js";
 import "./js/mobile-menu.js";
 import "./js/reviews-swiper.js";
 import "./js/subscribe-modal.js";
