@@ -204,6 +204,11 @@
 }
 
 @media screen and (min-width: 768px) {
+	.buy-now-close-btn {
+		top: 24px;
+		right: 24px;
+	}
+
 	.buy-now-modal {
 		min-width: 609px;
 		padding: 48px 48px;
@@ -230,7 +235,43 @@
 		flex-direction: row;
 	}
 
+	.personal-info-label {
+		font-size: 14px;
+	}
+
+	.personal-info-input {
+		padding: 24px 22px;
+		font-size: 18px;
+	}
+
+	.input-phone-number {
+		padding-left: 177px;
+	}
+
+	.ukraine-phone {
+		font-size: 18px;
+		column-gap: 18px;
+		padding-right: 32px;
+		border-right: 2px solid var(--border);
+		align-items: center;
+	}
+
+	.ukraine-phone svg {
+		width: 32px;
+		height: 32px;
+	}
+
+	.mastercard-logo {
+		right: 24px;
+		width: 44px;
+		height: 30px;
+	}
+
 	.name-surname .personal-info-input {
 		width: calc((100% - 21px) / 2);
+	}
+
+	.comment-textarea {
+		height: 137px;
 	}
 }
