@@ -44,10 +44,10 @@
 	align-items: center;
 	letter-spacing: -0.02em;
 	color: #111111;
-	padding-left: 188px;
 	flex-direction: row;
 	align-items: flex-start;
-	padding: 0px;
+	padding-left: 188px;
+	padding-right: 137px;
 	gap: 24px;
 }
 .header-list {
@@ -81,6 +81,7 @@
 }
 .social-ikon {
 	position: absolute;
+	padding-left: 4px;
 }
 
 /*Mobile menu*/
