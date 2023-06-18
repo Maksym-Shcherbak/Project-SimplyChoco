@@ -64,6 +64,6 @@
 .swiper-pagination-bullet-active {
 	width: 28px;
 	height: 13px;
-	border-radius: 20%/35%;
+	border-radius: 23%/50%;
 	background: var(--brand-color);
 }
