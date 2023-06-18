@@ -2,8 +2,26 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
 /* End Fonts */
 
+/* @font-face {
+	font-family: "FontAwesome";
+	src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+	src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+		url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+		url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+		url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+		url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+} */
+
 /* Start body rules */
-body {
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
 	background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 	background-attachment: fixed;
@@ -23,8 +41,6 @@ body {
 
 /* Start form  attributes */
 .login-form {
-	font-family: "Vibur", cursive;
-	font-family: "Abel", sans-serif;
 	width: 450px;
 	min-height: 500px;
 	height: auto;
@@ -33,6 +49,10 @@ body {
 	box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
 	padding: 2%;
 	background-image: linear-gradient(-225deg, #e3fdf5 50%, #ffe6fa 50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 /* form Container */
 .login-form .con {
@@ -49,18 +69,18 @@ body {
 }
 
 /* the header form form */
-.header-form {
+.head-form {
 	margin: 2% auto 10% auto;
 	text-align: center;
 }
 /* Login title form form */
-.header-form h2 {
+.head-form h2 {
 	font-size: 250%;
 	font-family: "Playfair Display", serif;
 	color: #3e403f;
 }
 /*  A welcome message or an explanation of the login form */
-.header-form p {
+.head-form p {
 	letter-spacing: 0.05em;
 }
 
@@ -181,3 +201,24 @@ input[id="txt-input"] {
 		transform: translateY(5px);
 	}
 }
+
+/* .fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fa-user-circle:before {
+	content: "\f2bd";
+}
+
+.fa-eye:before {
+	content: "\f06e";
+}
+
+.fa-key:before {
+	content: "\f084";
+} */
