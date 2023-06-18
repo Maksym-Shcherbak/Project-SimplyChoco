@@ -9,7 +9,14 @@
 </section>
 <div class="subscribe-backdrop is-hidden" data-modal>
     <div class="subscribe-modal">
-        <img  class="sub-bg-photo" src="/img/subscribe-img/subcribe-modal/sub-modal-bg-desk.webp" alt="modal-bg-chocolate">   
+        <picture>
+            <source 
+            srcset="/img/subscribe-img/subcribe-modal/sub-modal-bg-desk.webp 1x, /img/subscribe-img/subcribe-modal/sub-modal-bg-desk@2x.webp 2x" media="(min-width: 768px)"/>
+            <source 
+            srcset="/img/subscribe-img/subcribe-modal/sub-modal-bg-mob.webp 1x, /img/subscribe-img/subcribe-modal/sub-modal-bg-mob@2x.webp 2x" media="(min-width: 280px)"/>
+        <img  class="sub-bg-photo" 
+        src="/img/subscribe-img/subcribe-modal/sub-modal-bg-desk.webp" alt="modal-bg-chocolate">
+    </picture>   
          <button class="sub-modal-button" type="button" data-modal-close>
             <svg class="sub-modal-close-icon" 
             aria-label="icon-x-close" 
@@ -28,7 +35,8 @@
                 name="email"
                  id="user_email" 
                  placeholder="Enter your email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required>
             </label>
             <button class="subscribe-modal-btn" type="submit">Subscribe</button>
         </div>
