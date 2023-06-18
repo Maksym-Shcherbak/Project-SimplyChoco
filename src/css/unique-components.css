@@ -71,7 +71,7 @@
 	height: 270px;
 	border: 1px solid var(--brand-color);
 	border-radius: 15px;
-	padding: 28px 36px 82px 28px;
+	padding: 28px 55px 70px 55px;
 	position: relative;
 	overflow: hidden;
 }
@@ -195,7 +195,7 @@
 		/* max-height: 56px; */
 	}
 }
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
 	.unique-list :nth-child(1) {
 		order: 1;
 	}
@@ -226,5 +226,8 @@
 	}
 	.unique-list-item {
 		flex-basis: calc((100%-57px) / 4);
+	}
+	.unique-overlay-img-wrapper {
+		padding: 28px 36px 82px 28px;
 	}
 }
