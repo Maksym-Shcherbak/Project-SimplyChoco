@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url("./login.css");
 @import url("./reset.css");
 @import url("./vite-promo.css");
 @import url("./header.css");
@@ -53,10 +54,6 @@
 	--advantage-text: rgba(250, 250, 250 0, 7);
 }
 
-* {
-	box-sizing: border-box;
-}
-
 .container {
 	padding: 0 20px;
 	margin: 0 auto;
@@ -72,6 +69,10 @@
 	white-space: nowrap;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body.modal-open {
 	overflow: hidden;
 }
 
