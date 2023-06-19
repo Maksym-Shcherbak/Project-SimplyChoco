@@ -78,12 +78,8 @@
 	height: 409px;
 }
 
-.reviews .swiper-pagination {
+.section-our-product .swiper-pagination {
 	bottom: -5px;
-}
-
-.swiper-pagination {
-	margin-bottom: -17px;
 }
 
 /* .swiper-pagination {
@@ -175,10 +171,6 @@
 
 	.section-our-product .swiper {
 		height: 409px;
-	}
-
-	.reviews .swiper-pagination {
-		bottom: -5px;
 	}
 }
 
