@@ -14,8 +14,8 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
 		
-		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-cc4a0f4b.js"></script>
-		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-477880a1.css">
+		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-bfde16ef.js"></script>
+		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-c28b8db5.css">
 	</head>
 
 	<body>
@@ -891,27 +891,46 @@
 			</ul>
 			<label for="client-name" class="personal-info-label">Personal information</label>
 			<div class="form-inputs name-surname">
-				<input type="text" class="personal-info-input" placeholder="Name" id="client-name" name="client-name" />
-				<input type="text" class="personal-info-input" placeholder="Surname" name="client-surname" />
-			</div>
-			<label for="client-email" class="personal-info-label">Email</label>
-			<div class="form-inputs">
 				<input
-					type="email"
+					type="text"
 					class="personal-info-input"
-					placeholder="Enter your email"
-					id="client-email"
-					name="client-email"
+					placeholder="Name"
+					id="client-name"
+					name="client-name"
+					pattern="[A-Za-z\s]+"
+					required
+				/>
+				<input
+					type="text"
+					class="personal-info-input"
+					placeholder="Surname"
+					name="client-surname"
+					pattern="[A-Za-z\s]+"
+					required
 				/>
 			</div>
-			<label for="client-phone-number" class="personal-info-label">Phone number</label>
+			<label for="clientEmail" class="personal-info-label">Email</label>
+			<div class="form-inputs">
+				<input
+					class="personal-info-input"
+					placeholder="Enter your email"
+					id="clientEmail"
+					name="client-email"
+					type="email"
+					pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+					required
+				/>
+			</div>
+			<label for="clientPhoneNumber" class="personal-info-label">Phone number</label>
 			<div class="phone-number">
 				<input
 					type="tel"
 					class="personal-info-input input-phone-number"
 					placeholder="Phone number"
-					id="client-phone-number"
+					id="clientPhoneNumber"
 					name="client-phone-number"
+					maxlength="12"
+					required
 				/>
 				<div class="ukraine-phone">
 					<svg width="24" height="24">
@@ -920,14 +939,16 @@
 					<span>+380</span>
 				</div>
 			</div>
-			<label for="client-card-number" class="personal-info-label" id="client-phone-number">Card number</label>
+			<label for="clientCardNumber" class="personal-info-label" id="client-phone-number">Card number</label>
 			<div class="mastercard">
 				<input
 					type="tel"
 					class="personal-info-input"
 					placeholder="Enter card"
-					id="client-card-number"
+					id="clientCardNumber"
 					name="client-card-number"
+					maxlength="19"
+					required
 				/>
 				<svg class="mastercard-logo" width="32" height="21">
 					<use href="/Project-SimplyChoco/assets/icons-c22886e8.svg#icon-mastercard"></use>
@@ -940,7 +961,7 @@
 				id="purchase-comment"
 				placeholder="Enter text"
 			></textarea>
-			<button type="button" class="buy-now-btn-submit" buy-now-submit-close>Submit</button>
+			<button type="submit" class="buy-now-btn-submit">Submit</button>
 		</form>
 	</div>
 </div>
