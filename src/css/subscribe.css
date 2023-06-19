@@ -6,6 +6,7 @@
 	margin-left: auto;
 	height: 370px;
 }
+
 .subscribe-title {
 	color: var(--white-text);
 	font-weight: 600;
@@ -238,8 +239,6 @@ body.modal-open {
 	.sub-modal-button {
 		top: 15px;
 		right: 14px;
-		width: 24px;
-		height: 24px;
 	}
 
 	.subscribe-modal-form {
@@ -294,8 +293,7 @@ body.modal-open {
 	.sub-modal-button {
 		top: 24px;
 		right: 24px;
-		width: 28px;
-		height: 28px;
+
 	}
 
 	.subscribe-modal-form {
@@ -339,83 +337,3 @@ body.modal-open {
     padding: 17px 40px;
 }
 }
-
-@media screen and (min-width: 1200px) {
-
-}
-
-
-
-
-/* .sub-modal-close-btn {
-    position: absolute;
-    top: 15px;
-    right: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    width: 24px;
-    height: 24px;
-    border: none;
-} */
-
-
-/* .sub-modal-close-icon {
-    fill: var(--white-text);
-
-} */
-
-/* .subscribe-modal-form {
-    background-color: var(--light-background);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 32px 24px;
-} */
-
-/* .sub-modal-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--dark-text);
-} */
-
-/* .subscribe-modal-form {
-    background-color: var(--light-background);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 32px 24px;
-} */
-
-/* .sub-modal-accent-title {
-    margin-bottom: 24px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--brand-color);
-} */
-
-
-
-
-
-/* @media screen and (max-width: 767px) {
-.subscribe-modal {
-    background-image: url(/img/subscribe-img/subcribe-modal/sub-modal-bg-mob.webp);
-    max-width: 311px;
-    height: 169px;
-
-}
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .subscribe-modal {
-        background-image: url(/img/subscribe-img/subcribe-modal/sub-modal-bg-mob@2x.jpg);
-    }
-} */
