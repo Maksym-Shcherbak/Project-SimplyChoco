@@ -82,6 +82,14 @@
 	bottom: -5px;
 }
 
+.swiper-pagination {
+	margin-bottom: -17px;
+}
+
+/* .swiper-pagination {
+	bottom: -5px;
+} */
+
 /* ----------------------------DESCKTOP--------------------------------------- */
 
 @media screen and (min-width: 1200px) {
@@ -89,6 +97,10 @@
 		background-color: var(--light-background);
 		padding-bottom: 173px;
 	}
+
+	/* .swiper-pagination {
+		bottom: -5px;
+	} */
 
 	.title-our {
 		text-align: center;
