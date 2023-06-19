@@ -30,6 +30,14 @@
 .unique {
 	padding: 72px 0;
 }
+@media screen and (max-width: 768px) {
+	.unique-list-item {
+		margin-bottom: 20px;
+	}
+	.unique-list-item :last-child {
+		margin-bottom: 0;
+	}
+}
 
 .unique-header {
 	font-weight: 600;
