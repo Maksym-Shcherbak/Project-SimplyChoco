@@ -56,6 +56,11 @@
 	gap: 18px;
 	margin-left: auto;
 }
+.social-ikons {
+	fill: transparent;
+	stroke: black;
+	margin-left: 14px;
+}
 
 
 /*Mobile menu*/
