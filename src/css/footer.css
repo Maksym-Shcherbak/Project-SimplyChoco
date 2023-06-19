@@ -6,11 +6,7 @@ footer {
 	background-color: var(--dark-background);
 }
 
-@media screen and (min-width: 768px) {
-}
 
-@media screen and (min-width: 1200px) {
-}
 .footer-choco {
 	font-weight: 500;
 	font-size: 24px;
@@ -40,6 +36,8 @@ footer {
 	}
 		.svg-soc {
 			margin-left: 18px;
+			width: 24px;
+			height: 24px;
 		}
 }
 
@@ -103,4 +101,8 @@ hr {
 @media screen and (min-width: 768px) {
 	.yank{display: flex;
 	gap: 24px;}
+	.inst{
+		background-image: url('/img/icon/icons.svg#icon-instagram-d-t-24');
+	}
+	.twit{background-image: url('/img/icon/icons.svg#icon-twitter-d-t-24');}
 }
