@@ -15,9 +15,8 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
 		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-e48b2782.js"></script>
-		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-3a053d22.css">
+		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-3f79d891.js"></script>
+		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-477880a1.css">
 	</head>
 
 	<body>
@@ -40,13 +39,13 @@
 				<a class="mobile-navi-link link" href="#">Home</a>
 			</li>
 			<li class="mobile-navi">
-				<a class="mobile-navi-link link" href="#">How it’s made?</a>
+				<a class="mobile-navi-link link" href="#how-its-made-page">How it’s made?</a>
 			</li>
 			<li class="mobile-navi">
-				<a class="mobile-navi-link link" href="#">Our products</a>
+				<a class="mobile-navi-link link" href="#section-our-product">Our products</a>
 			</li>
 			<li class="mobile-navi">
-				<a class="mobile-navi-link link" href="#">Top sellers</a>
+				<a class="mobile-navi-link link" href="#top-sellers-page">Top sellers</a>
 			</li>
 			<li class="mobile-navi">
 				<a class="mobile-navi-link link" href="#reviews-page">Chocolate is loved</a>
@@ -174,7 +173,7 @@
 	</div>
 </section>
 
-		<section class="unique">
+		<section class="unique" id="unique-page">
 	<div class="unique-container container">
 		<h2
 			class="unique-header aos-init aos-animate"
@@ -506,7 +505,7 @@
 
 
 </section>
-		<section class="top-sellers">
+		<section class="top-sellers" id="top-sellers-page">
 	<div class="container">
 		<h2 class="top-sellers-title">
 			<span class="reviews-title-span">Top</span>
@@ -759,58 +758,74 @@
 	</div>
 </section>
 
-		<section class="subscribe">
-    <div class="container">
-    <h2 class="subscribe-title" data-aos="zoom-out"
-     data-aos-easing="linear"
-     data-aos-duration="1500">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
-    <p class="subscribe-suptitle" data-aos="zoom-out"
-     data-aos-easing="linear"
-     data-aos-duration="1500">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you
-    craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art
-    that is sure to please.</p>
-    <button  class="subscribe-modal-opn-btn" type="button" name="Subscribe" data-modal-open data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1500">Subscribe</button>
-</div>
+		<section class="subscribe" id="subscribe-page">
+	<div class="container">
+		<h2 class="subscribe-title" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
+			EXPLORE OUR NEW CHOCOLATE FIRST
+		</h2>
+		<p class="subscribe-suptitle" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
+			From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave
+			you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work
+			of art that is sure to please.
+		</p>
+		<button
+			class="subscribe-modal-opn-btn"
+			type="button"
+			name="Subscribe"
+			data-modal-open
+			data-aos="fade-up"
+			data-aos-easing="linear"
+			data-aos-duration="1500"
+		>
+			Subscribe
+		</button>
+	</div>
 </section>
 <div class="subscribe-backdrop is-hidden" data-modal>
-    <div class="subscribe-modal">
-        <picture>
-            <source 
-            srcset="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-desk@2x-78f3582b.webp 2x" media="(min-width: 768px)"/>
-            <source 
-            srcset="/Project-SimplyChoco/assets/sub-modal-bg-mob-600e4f1f.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-mob@2x-80c3da08.webp 2x" media="(min-width: 280px)"/>
-        <img  class="sub-bg-photo" 
-        src="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp" alt="modal-bg-chocolate">
-    </picture>   
-         <button class="sub-modal-button" type="button" data-modal-close>
-            <svg class="sub-modal-close-icon" 
-            aria-label="icon-x-close" 
-            width="28"
-            height="28">
-                <use href="/Project-SimplyChoco/assets/icons-c22886e8.svg#icon-x-close"></use>
-            </svg>
-    </button>
-    <div class="subscribe-modal-form">
-        <h2 class="sub-modal-title">EXPLORE OUR <br /> <span class="sub-modal-accent-title">NEW CHOCOLATE</span> FIRST!</h2>
-        <form class="subscribe-form">
-            <label class="subscribe-label" for="user_email">
-                <input 
-                class="subscribe-input-form"
-                type="email" 
-                name="email"
-                 id="user_email" 
-                 placeholder="Enter your email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                required>
-            </label>
-            <button class="subscribe-modal-btn" type="submit">Subscribe</button>
-            </form>
-        </div>
-        
-    </div>
-
+	<div class="subscribe-modal">
+		<picture>
+			<source
+				srcset="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-desk@2x-78f3582b.webp 2x"
+				media="(min-width: 768px)"
+			/>
+			<source
+				srcset="/Project-SimplyChoco/assets/sub-modal-bg-mob-600e4f1f.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-mob@2x-80c3da08.webp 2x"
+				media="(min-width: 280px)"
+			/>
+			<img
+				class="sub-bg-photo"
+				src="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp"
+				alt="modal-bg-chocolate"
+			/>
+		</picture>
+		<button class="sub-modal-button" type="button" data-modal-close>
+			<svg class="sub-modal-close-icon" aria-label="icon-x-close" width="28" height="28">
+				<use href="/Project-SimplyChoco/assets/icons-c22886e8.svg#icon-x-close"></use>
+			</svg>
+		</button>
+		<div class="subscribe-modal-form">
+			<h2 class="sub-modal-title">
+				EXPLORE OUR
+				<br />
+				<span class="sub-modal-accent-title">NEW CHOCOLATE</span>
+				FIRST!
+			</h2>
+			<form class="subscribe-form">
+				<label class="subscribe-label" for="user_email">
+					<input
+						class="subscribe-input-form"
+						type="email"
+						name="email"
+						id="user_email"
+						placeholder="Enter your email"
+						pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+						required
+					/>
+				</label>
+				<button class="subscribe-modal-btn" type="submit">Subscribe</button>
+			</form>
+		</div>
+	</div>
 </div>
 
 		
