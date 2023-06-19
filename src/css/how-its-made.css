@@ -12,7 +12,7 @@
 }
 
 .span-title {
-	color: #fd9222;
+	color: var(--brand-color);
 }
 
 .title-instruction {
@@ -47,9 +47,58 @@
 	margin-top: 5px;
 }
 
-.pictures {
+.img-how-its-made {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.pictures-how-its-made {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	border-radius: 15px;
+	overflow: hidden;
+	position: relative;
+	line-height: 0px;
+}
+
+.how-its-made-play-button {
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+	border: 1px solid #ffffff;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.how-its-made-play-button:hover {
+	border: 1px solid var(--brand-color);
+	transition: border 250ms;
+}
+
+.how-its-made-play-button:focus {
+	outline: none;
+	border: 1px solid var(--brand-color);
+	transition: border 250ms;
+}
+
+.pictures-how-its-made .how-its-made-play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.video-play-button {
+	margin-left: 8px;
+	border-style: solid;
+	border-width: 10px 0 10px 21px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.how-its-made-play-button:hover > .video-play-button,
+.how-its-made-play-button:focus > .video-play-button {
+	border-color: transparent transparent transparent var(--brand-color);
+	transition: border-color 250ms;
 }
 
 @media screen and (max-width: 767px) {
@@ -78,6 +127,11 @@
 
 	.div-him {
 		padding-bottom: 72px;
+	}
+
+	#how-its-made-video-player {
+		width: 335px;
+		height: 500px;
 	}
 }
 
@@ -108,7 +162,7 @@
 		padding-bottom: 32px;
 	}
 
-	.pictures {
+	.pictures-how-its-made {
 		margin-bottom: 20px;
 		display: flex;
 		align-items: center;
@@ -117,6 +171,14 @@
 
 	.div-him {
 		padding-bottom: 100px;
+		width: 614px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#how-its-made-video-player {
+		width: 614px;
+		height: 400px;
 	}
 }
 
@@ -151,5 +213,10 @@
 
 	.instruction-item:last-child {
 		padding-bottom: 34px;
+	}
+
+	#how-its-made-video-player {
+		width: 600px;
+		height: 400px;
 	}
 }
