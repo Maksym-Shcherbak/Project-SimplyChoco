@@ -216,6 +216,13 @@ body.modal-open {
 	border: 1.5px solid var(--input-border);
 	color: var(--placeholder);
 	background-color: transparent;
+	outline: none;
+	transition: border-color 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+}
+
+.subscribe-input-form:focus {
+	border-color: var(--brand-color);
 }
 
 .subscribe-modal-btn {
