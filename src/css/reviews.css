@@ -13,6 +13,11 @@
 	text-transform: uppercase;
 	color: var(--dark-text);
 	margin-bottom: 50px;
+	clear: both;
+}
+
+.animation-reviews {
+	clear: both;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,4 +58,10 @@
 .reviews-button:focus {
 	color: var(--white-text);
 	background-color: var(--brand-color);
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }

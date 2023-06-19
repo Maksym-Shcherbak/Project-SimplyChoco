@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$(".menu a").click(function (e) {
+	$(".hero-btn-list a, .mobile-navi-link, .menu-list a").click(function (e) {
 		if ($(this).attr("href").indexOf("#") != -1) {
 			// Проверяем, является и ссылка действительно якорной ссылкой.
 			e.preventDefault(); // Отменяем событие перехода.
@@ -15,3 +15,6 @@ $(document).ready(function () {
 		}
 	});
 });
+
+// initialization of aos
+AOS.init();
