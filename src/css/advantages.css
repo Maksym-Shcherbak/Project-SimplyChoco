@@ -1,7 +1,7 @@
 /* +++++++++++++++++++++++++MOBILE++++++++++++++++++++ */
 .advantages {
 	background-color: var(--dark-background);
-	padding: 20px 0;
+	padding: 0;
 }
 /* @media screen and (min-width: 375px) { */
 .advantages {
@@ -131,7 +131,7 @@
 		[data-aos^="rotate-in"][data-aos^="rotate-in"] {
 			backface-visibility: visible;
 			transition-property: transform;
-			transition-duration: 2s;
+			transition-duration: 3s;
 		}
 		[data-aos="rotate-in"] {
 			transform: perspective(2500px) rotateX(100deg);
