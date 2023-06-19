@@ -146,23 +146,33 @@ body.modal-open {
 }
 .subscribe-backdrop {
 	position: fixed;
-	overflow: scroll;
+	display: flex;
+	overflow-y: scroll;
 	left: 0;
 	top: 0;
-	width: 100%;
-	height: 100%;
+	right: 0;
+	bottom: 0;
 	background-color: rgba(246, 207, 140, 0.8);
-	z-index: 100;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	perspective: 2500px;
+}
+
+.subscribe-backdrop.is-hidden .subscribe-modal {
+	transform-style: preserve-3d;
+	transform: translateZ(600px) rotate(20deg);
+	opacity: 0;
+}
+
+.subscribe-backdrop .subscribe-modal {
+	transition: transform 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
+	transform: translateZ(0px) rotateX(0deg);
+	opacity: 1;
 }
 
 .subscribe-modal {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 15px;
 	background-color: rgba(250, 250, 250, 1);
+	margin: auto;
+	
 }
 
 .sub-modal-button {
