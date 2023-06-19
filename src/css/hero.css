@@ -49,6 +49,7 @@
   min-width: 120px;
   min-height: 41px;
 
+  font-style: normal;
   color: var(--white-text);
   font-weight: 600;
   font-size: 14px;
@@ -73,6 +74,7 @@
   min-width: 159px;
   min-height: 41px;
 
+  font-style: normal;
   color: var(--white-text);
   font-weight: 600;
   font-size: 14px;
@@ -96,14 +98,13 @@
 .hero-btn-scroll {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 12px;
-  justify-content: flex-start;
   align-items: center;
 
   padding: 0px;
   min-width: 107px;
   min-height: 28px;
 
+  font-style: normal;
   color: var(--white-text);
   font-weight: 500;
   font-size: 12px;
@@ -115,16 +116,30 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn-list-item-icon {
+
+.hero-btn-list-item-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 28px;
   height: 28px;
+
+  margin-left: 12px;
   background-color: var(--white-text);
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.hero-btn-list-item-icon {
+  width: 16px;
+  height: 16px;
   fill: var(--brand-color);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .hero-btn-scroll:hover,
 .hero-btn-scroll:focus {
@@ -134,8 +149,14 @@
 .hero-btn-scroll:hover .hero-btn-list-item-icon,
 .hero-btn-scroll:focus .hero-btn-list-item-icon {
   fill: var(--white-text);
+}
+
+.hero-btn-scroll:hover .hero-btn-list-item-icon-container,
+.hero-btn-scroll:focus .hero-btn-list-item-icon-container {
+  fill: var(--white-text);
   background-color: var(--brand-color);
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -167,6 +188,10 @@
     white-space: pre-line;
   }
 
+  .hero-btn-list {
+    flex-wrap: nowrap;
+  }
+
 
   .btn-list-item {
     margin-left: auto;
@@ -189,9 +214,14 @@
     line-height: 1.29;
   }
 
-  .hero-btn-list-item-icon {
+  .hero-btn-list-item-icon-container {
     width: 38px;
     height: 38px;
+  }
+
+  .hero-btn-list-item-icon {
+    width: 22px;
+    height: 22px;
   }
 }
 
