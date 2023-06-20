@@ -1048,14 +1048,25 @@
 			leave a review about
 			<span class="reviews-title-span">our chocolate</span>
 		</h2>
-		<form class="review-form">
+		<form class="review-form form">
 			<div class="form-inputs">
-				<input type="text" pattern="text" required required="text" class="info-input" placeholder="Name" id="name" name="name" />
+				<input
+				    type="text"					
+					minlength="3"
+				    maxlength="30" 
+					pattern="[A-Za-z\s]+" 
+					required required="text" 
+					class="info-input" 
+					placeholder="Name" 
+					id="name"
+					name="name" 
+				/>
 			</div>
 			<div class="form-inputs">
 				<input
 					type="email"
-					pattern="email"
+					minlength="3"
+					maxlength="30"
 					required="email"
 					class="info-input"
 					placeholder="Enter your email"
@@ -1067,7 +1078,9 @@
 			<div class="phone-number">
 				<input
 					type="tel"
-					pattern="tel"
+					minlength="9"
+					maxlength="9"
+					pattern="[0-9]+"
 					required="number"
 					class="info-input input-phone-number"
 					placeholder="Phone number"
@@ -1088,7 +1101,7 @@
 				maxlength="140"
 				placeholder="Enter text"
 			></textarea>
-			<button type="button" class="btn-send">Send</button>
+			<button type="submit" class="btn-send">Send</button>
 		</form>
 	</div>
 </div>
