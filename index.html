@@ -18,15 +18,13 @@
 		/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
-		
 		<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+		
 		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-0f133b76.js"></script>
 		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-99027df1.css">
 	</head>
 
 	<body>
-		<a href="#page-header" class="back-to-top">Top</a>
-
 		<header class="page-header" id="page-header">
 	<div class="flex-container container">
 		<nav class="nav">
@@ -124,7 +122,8 @@
 
 </header>
 
-		<section class="hero" id="hero-page">
+		<main>
+			<section class="hero" id="hero-page">
 	<div class="container hero-container-img">
 		<div class="hero-container">
 			<h1 class="visually-hidden">Hero</h1>
@@ -151,7 +150,7 @@
 	</div>
 </section>
 
-		<section class="advantages">
+			<section class="advantages">
 	<div class="container">
 		<h2 class="visually-hidden" hidden>advantages</h2>
 		<ul class="advantages-list">
@@ -225,7 +224,7 @@
 	</div>
 </section>
 
-		<section class="unique" id="unique-page">
+			<section class="unique" id="unique-page">
 	<div class="unique-container container">
 		<h2
 			class="unique-header aos-init aos-animate"
@@ -403,7 +402,7 @@
 	</div>
 </section>
 
-		<section class="how-its-made" id="how-its-made-page">
+			<section class="how-its-made" id="how-its-made-page">
 	<div class="div-how-its-made container">
 		<h2 class="title-how-its-made">
 			HOW IT’S
@@ -460,7 +459,7 @@
 	</div>
 </section>
 
-		<section id="section-our-product" class="section-our-product">
+			<section id="section-our-product" class="section-our-product">
 	<div class="container">
 		<h2 class="title-our">
 			OUR
@@ -594,7 +593,7 @@
 	</div>
 </section>
 
-		<section class="top-sellers" id="top-sellers-page">
+			<section class="top-sellers" id="top-sellers-page">
 	<div class="container">
 		<h2 class="top-sellers-title">
 			<span class="reviews-title-span">Top</span>
@@ -666,7 +665,7 @@
 	</div>
 </section>
 
-		<section class="reviews" id="reviews-page">
+			<section class="reviews" id="reviews-page">
 	<div class="container">
 		<h2 class="reviews-title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 			<span class="reviews-title-span">chocolate</span>
@@ -903,7 +902,7 @@
 	</div>
 </section>
 
-		<section class="subscribe" id="subscribe-page">
+			<section class="subscribe" id="subscribe-page">
 	<div class="container">
 		<h2 class="subscribe-title" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
 			EXPLORE OUR NEW CHOCOLATE FIRST
@@ -926,53 +925,8 @@
 		</button>
 	</div>
 </section>
-<div class="subscribe-backdrop is-hidden" id="modal" data-modal="modal-3">
-	<div class="subscribe-modal">
-		<picture>
-			<source
-				srcset="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-desk@2x-78f3582b.webp 2x"
-				media="(min-width: 768px)"
-			/>
-			<source
-				srcset="/Project-SimplyChoco/assets/sub-modal-bg-mob-600e4f1f.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-mob@2x-80c3da08.webp 2x"
-				media="(min-width: 280px)"
-			/>
-			<img
-				class="sub-bg-photo"
-				src="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp"
-				alt="modal-bg-chocolate"
-			/>
-		</picture>
-		<button class="sub-modal-button" type="button" data-modal-close>
-			<svg class="sub-modal-close-icon" aria-label="icon-x-close" width="28" height="28">
-				<use href="/Project-SimplyChoco/assets/icons-3d6801a8.svg#icon-x-close"></use>
-			</svg>
-		</button>
-		<div class="subscribe-modal-form">
-			<h2 class="sub-modal-title">
-				EXPLORE OUR
-				<br />
-				<span class="sub-modal-accent-title">NEW CHOCOLATE</span>
-				FIRST!
-			</h2>
-			<form class="subscribe-form">
-				<label class="subscribe-label" for="user_email">
-					<input
-						class="subscribe-input-form"
-						type="email"
-						name="email"
-						id="user_email"
-						placeholder="Enter your email"
-						pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-						required
-					/>
-				</label>
-				<button class="subscribe-modal-btn" type="submit">Subscribe</button>
-			</form>
-		</div>
-	</div>
-</div>
 
+		</main>
 		<footer class="page-footer" id="footer-pages">
 	<div class="container">
 		<div class="adopt">
@@ -1170,7 +1124,53 @@
 	</div>
 </div>
 
-		
+		<div class="subscribe-backdrop is-hidden" id="modal" data-modal="modal-3">
+	<div class="subscribe-modal">
+		<picture>
+			<source
+				srcset="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-desk@2x-78f3582b.webp 2x"
+				media="(min-width: 768px)"
+			/>
+			<source
+				srcset="/Project-SimplyChoco/assets/sub-modal-bg-mob-600e4f1f.webp 1x, /Project-SimplyChoco/assets/sub-modal-bg-mob@2x-80c3da08.webp 2x"
+				media="(min-width: 280px)"
+			/>
+			<img
+				class="sub-bg-photo"
+				src="/Project-SimplyChoco/assets/sub-modal-bg-desk-a2157d58.webp"
+				alt="modal-bg-chocolate"
+			/>
+		</picture>
+		<button class="sub-modal-button" type="button" data-modal-close>
+			<svg class="sub-modal-close-icon" aria-label="icon-x-close" width="28" height="28">
+				<use href="/Project-SimplyChoco/assets/icons-3d6801a8.svg#icon-x-close"></use>
+			</svg>
+		</button>
+		<div class="subscribe-modal-form">
+			<h2 class="sub-modal-title">
+				EXPLORE OUR
+				<br />
+				<span class="sub-modal-accent-title">NEW CHOCOLATE</span>
+				FIRST!
+			</h2>
+			<form class="subscribe-form">
+				<label class="subscribe-label" for="user_email">
+					<input
+						class="subscribe-input-form"
+						type="email"
+						name="email"
+						id="user_email"
+						placeholder="Enter your email"
+						pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+						required
+					/>
+				</label>
+				<button class="subscribe-modal-btn" type="submit">Subscribe</button>
+			</form>
+		</div>
+	</div>
+</div>
+
 		<div class="backdrop is-hidden" data-modal="modal-2">
 	<div class="review-modal">
 		<button type="button" class="modal-close-but" data-modal-close>
@@ -1226,6 +1226,8 @@
 		</form>
 	</div>
 </div>
+
+		<a href="#page-header" class="back-to-top">Top</a>
 
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
