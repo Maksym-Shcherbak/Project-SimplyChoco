@@ -29,12 +29,13 @@
 
 .unique {
 	padding: 72px 0;
+	background-color: var(--light-background);
 }
 @media screen and (max-width: 768px) {
 	.unique-list-item {
 		margin-bottom: 20px;
 	}
-	.unique-list-item-last {
+	.unique-list-item :last-child {
 		margin-bottom: 0;
 	}
 }
@@ -47,7 +48,6 @@
 	letter-spacing: -0.03em;
 	text-transform: uppercase;
 	color: #111111;
-
 	margin: 0 auto;
 	margin-bottom: 28px;
 }
