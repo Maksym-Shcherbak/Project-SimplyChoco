@@ -3,19 +3,37 @@ const input = document.getElementById('clientCardNumber');
 input.addEventListener('input', function(event) {
   let value = event.target.value;
   
-  // Видаляємо всі роздільники тире та нецифрові символи зі значення поля вводу
-  value = value.replace(/[-\D]/g, '');
+  // Видаляємо всі нецифрові символи зі значення поля вводу
+  value = value.replace(/\D/g, '');
   
-  // Додаємо тире через кожні 4 символи
-  value = value.replace(/(.{4})/g, '$1-');
-  
-  // Видаляємо останнє тире, якщо кількість символів не кратна 4
-  if (value.endsWith('-')) {
-    value = value.slice(0, -1);
-  }
+  // Додаємо пробіл після кожних 4 символів
+  value = value.replace(/(.{4})/g, '$1 ');
   
   // Оновлюємо значення поля вводу
   event.target.value = value;
+});
+
+input.addEventListener('keydown', function(event) {
+  // Перевіряємо, чи натиснута клавіша Backspace
+  if (event.key === 'Backspace') {
+    // Видаляємо пробіли перед видаленням символу
+    let value = input.value.replace(/\s/g, '');
+    
+    // Перевіряємо, чи поле вводу не пусте
+    if (value.length > 0) {
+      // Видаляємо останній символ
+      value = value.slice(0, -1);
+      
+      // Форматуємо значення поля вводу знову
+      value = value.replace(/(.{4})/g, '$1 ');
+    }
+    
+    // Оновлюємо значення поля вводу
+    input.value = value;
+    
+    // Зупиняємо дійсний ввід клавіші Backspace
+    event.preventDefault();
+  }
 });
 
 const clientPhoneNumber = document.getElementById('clientPhoneNumber');
