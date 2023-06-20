@@ -204,23 +204,16 @@ input[id="txt-input"] {
 	}
 }
 
-/* .fa {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.register-btn {
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	padding-bottom: 12px;
 }
 
-.fa-user-circle:before {
-	content: "\f2bd";
+.register-btn:hover,
+.register-btn:focus .icon-login {
+	fill: var(--brand-color);
 }
-
-.fa-eye:before {
-	content: "\f06e";
-}
-
-.fa-key:before {
-	content: "\f084";
-} */
