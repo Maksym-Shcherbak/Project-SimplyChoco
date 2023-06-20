@@ -31,6 +31,7 @@
 	/*   the main font */
 	font-family: "Abel", sans-serif;
 	opacity: 0.95;
+	z-index: 100;
 	/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
 }
 
