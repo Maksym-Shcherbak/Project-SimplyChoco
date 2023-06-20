@@ -11,14 +11,13 @@
 }
 
 .review-modal {
+    position: absolute;
 	width: 311px;
 	border-radius: 15px;
-	margin: 0 auto;
 	background-color: var(--light-background);
-	position: absolute;
-	top: 20px;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translate(-50%, -50%);
 	padding: 32px 24px;
 }
 
@@ -45,7 +44,7 @@
 }
 
 
-.modal-close-but:is(:hover, :focus) {
+.modal-close-but:is(:hover, :focus) > .modal-close-icon-but {
     stroke: var(--brand-color);
 }
 
@@ -173,6 +172,7 @@
 
 @media screen and (min-width: 768px) {
 	.review-modal {
+        top: ((100%-517px)/2);
 		width: 517px;
 		padding: 40px;
 	}
