@@ -18,8 +18,8 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
 		
-		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-11977684.js"></script>
-		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-89b42655.css">
+		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-8cc26678.js"></script>
+		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-8ea63c68.css">
 	</head>
 
 	<body>
@@ -129,7 +129,7 @@
 			<h2 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
 			<ul class="hero-btn-list">
 				<li class="hero-btn-list-item">
-					<button class="hero-btn-buy-now" buy-now-hero>Buy now</button>
+					<button class="hero-btn-buy-now" data-modal-open="modal-1">Buy now</button>
 				</li>
 				<li class="hero-btn-list-item">
 					<a href="#how-its-made-page" class="hero-btn-how-it">How it&#8217;s made</a>
@@ -628,7 +628,7 @@
 					<img srcset="/Project-SimplyChoco/assets/nuts-and-chocolate-desktop-565a8e29.webp " alt="chocolate" />
 				</picture>
 			</li>
-			<li><button class="buy-now-button" type="button" buy-now-modal-open>Buy now</button></li>
+			<li><button class="buy-now-button" type="button" data-modal-open="modal-1">Buy now</button></li>
 		</ul>
 	</div>
 </section>
@@ -828,7 +828,7 @@
 			class="subscribe-modal-opn-btn"
 			type="button"
 			name="Subscribe"
-			data-modal-open
+			data-modal-open="modal-3"
 			data-aos="fade-up"
 			data-aos-easing="linear"
 			data-aos-duration="1000"
@@ -837,7 +837,7 @@
 		</button>
 	</div>
 </section>
-<div class="subscribe-backdrop is-hidden" id="modal" data-modal>
+<div class="subscribe-backdrop is-hidden" id="modal" data-modal="modal-3">
 	<div class="subscribe-modal">
 		<picture>
 			<source
@@ -944,9 +944,9 @@
 	</footer>
 </html>
 
-		<div class="backdrop-buy-now is-hidden" buy-now-modal>
+		<div class="backdrop-buy-now is-hidden" data-modal="modal-1">
 	<div class="buy-now-modal">
-		<button type="button" class="buy-now-close-btn" buy-now-modal-close>
+		<button type="button" class="buy-now-close-btn" data-modal-close>
 			<svg class="buy-now-close-btn-x" width="24" height="24">
 				<use href="/Project-SimplyChoco/assets/icons-3b54cf42.svg#icon-x-close"></use>
 			</svg>
