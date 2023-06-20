@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$(".hero-btn-list a, .mobile-navi-link, .menu-list a, .back-to-top").click(function (e) {
+	$(".hero-btn-list a, .mobile-navi-link, .menu-link, .back-to-top, .yak-link").click(function (e) {
 		if ($(this).attr("href").indexOf("#") != -1) {
 			// Проверяем, является и ссылка действительно якорной ссылкой.
 			e.preventDefault(); // Отменяем событие перехода.
