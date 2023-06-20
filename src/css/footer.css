@@ -6,7 +6,6 @@ footer {
 	background-color: var(--dark-background);
 }
 
-
 .footer-choco {
 	font-weight: 500;
 	font-size: 24px;
@@ -14,10 +13,18 @@ footer {
 	letter-spacing: -0.02em;
 	padding: 32px 0;
 }
-.svg-soc{
-	fill:transparent;
+.svg-soc {
+	fill: transparent;
 	stroke: var(--white-text);
 	margin-left: 14px;
+}
+.svg-soc:hover {
+	fill: transparent;
+	stroke: var(--brand-color);
+}
+.svg-soc:focus {
+	fill: transparent;
+	stroke: var(--brand-color);
 }
 .choco {
 	color: var(--brand-color);
@@ -34,11 +41,11 @@ footer {
 		line-height: 34px;
 		justify-content: flex-start;
 	}
-		.svg-soc {
-			margin-left: 18px;
-			width: 24px;
-			height: 24px;
-		}
+	.svg-soc {
+		margin-left: 18px;
+		width: 24px;
+		height: 24px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -63,15 +70,25 @@ footer {
 	display: flex;
 }
 @media screen and (min-width: 768px) {
-	.social-link{margin-left: auto;
-	padding-top: 50px;}
-	.list{margin-right: 50px;}
+	.social-link {
+		margin-left: auto;
+		padding-top: 50px;
+	}
+	.list {
+		margin-right: 50px;
+	}
 }
 .adress {
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
 	letter-spacing: -0.02em;
+}
+.adress:hover{
+	color: var(--brand-color);
+}
+.adress:focus{
+	color: var(--brand-color);
 }
 .social {
 	display: flex;
@@ -99,10 +116,20 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-	.yank{display: flex;
-	gap: 24px;}
-	.inst{
-		background-image: url('/img/icon/icons.svg#icon-instagram-d-t-24');
+	.yank {
+		display: flex;
+		gap: 24px;
 	}
-	.twit{background-image: url('/img/icon/icons.svg#icon-twitter-d-t-24');}
+	.inst {
+		background-image: url("/img/icon/icons.svg#icon-instagram-d-t-24");
+	}
+	.twit {
+		background-image: url("/img/icon/icons.svg#icon-twitter-d-t-24");
+	}
+}
+.yak-link:hover{
+	color: var(--brand-color);
+}
+.yak-link:focus{
+	color: var(--brand-color);
 }
