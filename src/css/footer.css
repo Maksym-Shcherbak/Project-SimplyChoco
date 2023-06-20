@@ -91,7 +91,7 @@ hr {
 	color: var(--brand-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
 	.footer-choco {
 		margin-bottom: 32px;
 	}
