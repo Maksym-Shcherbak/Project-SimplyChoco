@@ -179,6 +179,7 @@
 	#how-its-made-video-player {
 		width: 614px;
 		height: 400px;
+		display: none;
 	}
 }
 

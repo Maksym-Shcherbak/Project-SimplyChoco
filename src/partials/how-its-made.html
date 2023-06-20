@@ -21,18 +21,17 @@
 					/>
 					<img src="./img/how-its-made/how-its-made-tablet.webp" alt="picture chocolate" />
 				</picture>
-				<button class="how-its-made-play-button" id="how-its-made-play-button">
+				<button class="how-its-made-play-button" id="how-its-made-play-button" hidden>
 					<div class="video-play-button"></div>
 				</button>
-				<iframe
-					id="how-its-made-video-player"
-					src="https://www.youtube.com/embed/u459lgZFqgk?enablejsapi=1"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-					hidden
-				></iframe>
+				<div class="plyr__video-embed" id="how-its-made-video-player">
+					<iframe
+						src="https://www.youtube.com/embed/u459lgZFqgk?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+						allowfullscreen
+						allowtransparency
+						allow="autoplay"
+					></iframe>
+				</div>
 			</div>
 
 			<div class="section-instruction">
