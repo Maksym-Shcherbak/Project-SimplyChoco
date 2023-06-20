@@ -29,3 +29,24 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 		},
 	},
 });
+
+const swip = new Swiper(".section-our-product .swiper", {
+	// Optional parameters
+	slidesPerView: 1,
+	spaceBetween: 18,
+	loop: true,
+	direction: "horizontal",
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+
+	breakpoints: {
+		768: {
+			slidesPerView: "auto",
+		},
+		1200: {
+			slidesPerView: 4,
+		},
+	},
+});
