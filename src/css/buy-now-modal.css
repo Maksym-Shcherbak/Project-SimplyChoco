@@ -34,6 +34,11 @@
 	justify-content: center;
 }
 
+.buy-now-close-btn:hover .buy-now-close-btn-x,
+.buy-now-close-btn:focus .buy-now-close-btn-x {
+	stroke: var(--brand-color);
+}
+
 .buy-now-close-btn-x {
 	stroke: #111;
 }

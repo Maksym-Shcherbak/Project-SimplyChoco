@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	row-gap: 20px;
 }
 
 .top-sellers-title {
@@ -48,16 +49,11 @@
 	display: none;
 }
 
-@media screen and (max-width: 767px) {
-	.top-sellers-text {
-		margin-top: 20px;
-		margin-bottom: 32px;
-	}
-
+/* @media screen and (max-width: 767px) {
 	.buy-now-button {
-		margin: 20px auto;
+		margin: 20px auto 0px;
 	}
-}
+} */
 
 @media screen and (min-width: 768px) {
 	.top-sellers {
@@ -68,8 +64,9 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
-		justify-content: center;
+		justify-content: space-between;
 		column-gap: 16px;
+		row-gap: 32px;
 	}
 
 	.top-sellers-title {
@@ -79,12 +76,10 @@
 	.top-sellers-content li:nth-child(2) {
 		order: 1;
 		width: 306px;
-		margin-top: 32px;
 	}
 
 	.top-sellers-content li:nth-child(5) {
 		order: 2;
-		margin: 32px 0 0 auto;
 	}
 
 	.buy-now-button {
