@@ -29,6 +29,7 @@
 
 .unique {
 	padding: 72px 0;
+	background-color: var(--light-background);
 }
 @media screen and (max-width: 768px) {
 	.unique-list-item {
