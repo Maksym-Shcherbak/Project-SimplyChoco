@@ -59,9 +59,3 @@
 	color: var(--white-text);
 	background-color: var(--brand-color);
 }
-
-.hidden {
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}

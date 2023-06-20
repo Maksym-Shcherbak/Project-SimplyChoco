@@ -21,17 +21,6 @@
 		});
 	});
 
-	document.addEventListener("keydown", event => {
-		if (event.key === "Escape") {
-			modals.forEach(modal => {
-				if (modal.classList.contains("is-open")) {
-					modal.classList.remove("is-open");
-					document.body.classList.remove("modal-open");
-				}
-			});
-		}
-	});
-
 	modals.forEach(modal => {
 		modal.addEventListener("click", event => {
 			if (event.target === modal) {

@@ -12,8 +12,10 @@
 	margin-bottom: 32px;
 }
 .advantages-general-icon {
-	display: block;
-	position: relative;
+	display: flex;
+	/* position: relative; */
+	justify-content: center;
+	align-items: center;
 	width: 62px;
 	height: 62px;
 	border: 1px solid rgba(255, 255, 255, 0.5);
@@ -21,10 +23,10 @@
 	margin-bottom: 22px;
 }
 .advantages-list-icon {
-	position: absolute;
+	/* position: absolute;
 	bottom: 50%;
 	left: 50%;
-	transform: translate(-50%, 150%);
+	transform: translate(-50%, 150%); */
 }
 /* .rotate-scale-up {
 	-webkit-animation: rotate-scale-up 0.65s linear both;
@@ -94,7 +96,7 @@
 /* +++++++++++++++++++++++++/TABLET++++++++++++++++++++ */
 
 /* +++++++++++++++++++++++++DESKTOP++++++++++++++++++++ */
-@media screen and (min-width: 1157px) {
+@media screen and (min-width: 1200px) {
 	.advantages {
 		/* height: 344px; */
 		padding-left: 18px;

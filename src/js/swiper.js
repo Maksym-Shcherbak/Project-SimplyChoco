@@ -12,9 +12,9 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 	// effect: "coverflow",
 	effect: "coverflow",
 	coverflowEffect: {
-		rotate: 30,
+		rotate: 50,
 		slideShadows: true,
-		depth: 100,
+		depth: 50,
 		modifier: 1,
 		stretch: 0,
 	},

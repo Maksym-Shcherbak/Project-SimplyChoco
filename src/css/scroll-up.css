@@ -42,19 +42,19 @@
 .back-to-top::before {
 	top: -20px;
 	z-index: 4;
-	border-bottom: 20px solid var(--dark-background);
+	border-bottom: 20px solid var(--scroll);
 }
 
 .back-to-top::after {
 	bottom: 0;
 	z-index: 5;
-	border-bottom: 20px solid var(--dark-background);
+	border-bottom: 20px solid var(--scroll);
 }
 
 .back-to-top:hover,
 .back-to-top:focus {
 	height: 40px;
-	color: #212223;
+	color: var(--dark-background);
 }
 
 .show-back-to-top {

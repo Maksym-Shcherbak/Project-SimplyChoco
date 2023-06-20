@@ -181,7 +181,7 @@
 		gap: 32px 32px;
 	}
 	.unique-list-item {
-		flex-basis: calc((100%-32px) / 2);
+		flex-basis: calc((100% - 32px) / 2);
 	}
 
 	.unique-paragraf {
@@ -225,7 +225,7 @@
 		gap: 19px; */
 	}
 	.unique-list-item {
-		flex-basis: calc((100%-57px) / 4);
+		flex-basis: calc((100% - 57px) / 4);
 	}
 	.unique-overlay-img-wrapper {
 		padding: 28px 36px 82px 28px;

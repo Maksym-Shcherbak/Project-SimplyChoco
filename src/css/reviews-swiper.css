@@ -8,6 +8,11 @@
 	bottom: -5px;
 }
 
+.reviews .swiper-slide {
+	border-radius: 15px;
+	height: 82%;
+}
+
 .reviews-card {
 	padding: 104px 18px 24px 18px;
 	background-color: var(--white-text);
@@ -15,7 +20,7 @@
 	box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 	border-radius: 15px;
 	position: relative;
-	height: 82%;
+	height: 100%;
 }
 
 .reviewer {
