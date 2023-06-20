@@ -18,8 +18,9 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
 		
-		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-fb0b00b6.js"></script>
-		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-f76f0d37.css">
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+		<script type="module" crossorigin src="/Project-SimplyChoco/assets/index-d4c9a9bf.js"></script>
+		<link rel="stylesheet" href="/Project-SimplyChoco/assets/index-00f29f20.css">
 	</head>
 
 	<body>
@@ -436,18 +437,17 @@
 					/>
 					<img src="/Project-SimplyChoco/assets/how-its-made-tablet-173291fa.webp" alt="picture chocolate" />
 				</picture>
-				<button class="how-its-made-play-button" id="how-its-made-play-button">
+				<button class="how-its-made-play-button" id="how-its-made-play-button" hidden>
 					<div class="video-play-button"></div>
 				</button>
-				<iframe
-					id="how-its-made-video-player"
-					src="https://www.youtube.com/embed/u459lgZFqgk?enablejsapi=1"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-					hidden
-				></iframe>
+				<div class="plyr__video-embed" id="how-its-made-video-player">
+					<iframe
+						src="https://www.youtube.com/embed/u459lgZFqgk?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+						allowfullscreen
+						allowtransparency
+						allow="autoplay"
+					></iframe>
+				</div>
 			</div>
 
 			<div class="section-instruction">
@@ -1091,6 +1091,7 @@
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
 		
