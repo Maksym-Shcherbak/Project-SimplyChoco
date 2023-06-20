@@ -101,6 +101,10 @@
 	transition: border-color 250ms;
 }
 
+#how-its-made-video-player {
+	display: none;
+}
+
 @media screen and (max-width: 767px) {
 	.title-how-its-made {
 		font-size: 20px;
