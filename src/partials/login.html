@@ -1,14 +1,14 @@
-<div class="overlay login-form">
+<div class="overlay is-hidden" data-modal="modal-4">
 	<!-- LOGN IN FORM by Omar Dsoky -->
-	<form>
+	<form class="login-form">
 		<!--   con = Container  for items in the form-->
 		<div class="con">
 			<!--     Start  header Content  -->
-			<header class="head-form">
+			<div class="head-form">
 				<h2>Log In</h2>
 				<!--     A welcome message or an explanation of the login form -->
 				<p>login here using your username and password</p>
-			</header>
+			</div>
 			<!--     End  header Content  -->
 			<br />
 			<div class="field-set">
@@ -17,7 +17,7 @@
 					<i class="fa fa-user-circle"></i>
 				</span>
 				<!--   user name Input-->
-				<input class="form-input" id="txt-input" type="text" placeholder="@UserName" required />
+				<input class="login-form-input" id="txt-input" type="text" placeholder="@UserName" required />
 
 				<br />
 
@@ -27,7 +27,7 @@
 					<i class="fa fa-key"></i>
 				</span>
 				<!--   Password Input-->
-				<input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required />
+				<input class="login-form-input" type="password" placeholder="Password" id="pwd" name="password" required />
 
 				<!--      Show/hide password  -->
 				<span>
@@ -37,7 +37,7 @@
 				<br />
 				<!--        buttons -->
 				<!--      button LogIn -->
-				<button class="log-in">Log In</button>
+				<button class="btn log-in">Log In</button>
 			</div>
 
 			<!--   other buttons -->
@@ -58,4 +58,5 @@
 
 		<!-- End Form -->
 	</form>
+	<button class="sub-modal-close-btn" type="button" data-modal-close></button>
 </div>
