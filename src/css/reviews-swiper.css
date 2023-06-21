@@ -1,11 +1,13 @@
 .reviews .swiper {
-	height: 285px;
-	margin-bottom: 50px;
-	padding-top: 40px;
+	height: 275px;
+	margin-bottom: 32px;
+	padding-top: 42px;
 }
 
-.reviews .swiper-pagination {
-	bottom: -5px;
+.reviews .swiper-slide {
+	border-radius: 15px;
+	height: 82%;
+	margin-bottom: 20px;
 }
 
 .reviews-card {
@@ -15,7 +17,8 @@
 	box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
 	border-radius: 15px;
 	position: relative;
-	height: 82%;
+	height: 100%;
+	margin-bottom: 32px;
 }
 
 .reviewer {
@@ -23,7 +26,7 @@
 	margin: 0;
 	position: absolute;
 	left: 21%;
-	top: -18%;
+	top: -22%;
 }
 
 .reviewer-photo {
@@ -49,6 +52,15 @@
 	color: var(--gray-text);
 }
 
+.reviews-swiper-pagination {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	transition: 0.3s opacity;
+	transform: translate3d(0, 0, 0);
+	z-index: 10;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 0 6px;
@@ -66,4 +78,16 @@
 	height: 13px;
 	border-radius: 23%/50%;
 	background: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+	.reviews .swiper {
+		height: 285px;
+		margin-bottom: 50px;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal {
+		bottom: -2%;
+	}
 }

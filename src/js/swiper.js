@@ -5,16 +5,16 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 	loop: true,
 	direction: "horizontal",
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".reviews-swiper-pagination",
 		clickable: true,
 	},
 
 	// effect: "coverflow",
 	effect: "coverflow",
 	coverflowEffect: {
-		rotate: 30,
+		rotate: 50,
 		slideShadows: true,
-		depth: 100,
+		depth: 50,
 		modifier: 1,
 		stretch: 0,
 	},

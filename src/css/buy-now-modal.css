@@ -195,6 +195,13 @@
 	line-height: 17px;
 	font-family: "Montserrat", sans-serif;
 	margin-top: 30px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-now-btn-submit:hover,
+.buy-now-btn-submit:focus {
+	background-color: var(--pressed-state);
+	color: var(--brand-color);
 }
 
 @media screen and (max-width: 375px) {
@@ -273,5 +280,9 @@
 
 	.comment-textarea {
 		height: 137px;
+	}
+
+	.buy-now-btn-submit {
+		padding: 14px 40px;
 	}
 }
