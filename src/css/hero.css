@@ -39,9 +39,12 @@
 .hero-btn-list {
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
-	column-gap: 14px;
-	row-gap: 32px;
+
+	margin-bottom: 32px;
+}
+
+.hero-btn-list-item:first-child {
+	margin-right: 14px;
 }
 
 .hero-btn-buy-now {
@@ -92,9 +95,12 @@
 	background-color: var(--white-text);
 }
 
+.btn-list-item {
+	max-width: 108px;
+}
+
 .hero-btn-scroll {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 
 	padding: 0px;
@@ -179,12 +185,20 @@
 		white-space: pre-line;
 	}
 
+	.container-hero-btn-list {
+		display: flex;
+		align-items: center;
+	}
+
 	.hero-btn-list {
 		flex-wrap: nowrap;
+		margin-bottom: 0;
 	}
 
 	.btn-list-item {
 		margin-left: auto;
+		min-width: 130px;
+
 	}
 
 	.hero-btn-buy-now {
@@ -224,6 +238,8 @@
 		height: 600px;
 		max-width: 1136px;
 	}
+
+
 }
 
 @media screen and (max-width: 374px) {
@@ -232,12 +248,25 @@
 	}
 
 	.hero-btn-list {
+		flex-direction: column;
 		justify-content: center;
+		margin-bottom: 32px;
+	}
+
+	.hero-btn-list-item:first-child {
+		margin-right: 0;
+		margin-bottom: 32px;
 	}
 
 	.hero-btn-how-it {
 		width: 130px;
 	}
+
+	.btn-list-item {
+		margin: 0 auto;
+		max-width: 108px;
+	}
+
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
