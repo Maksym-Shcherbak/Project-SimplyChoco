@@ -103,6 +103,7 @@
 
 	.flex-container {
 		align-items: center;
+		justify-content: space-between;
 	}
 
 	.menu-link {
@@ -134,7 +135,10 @@
 	.networks-menu {
 		display: flex;
 		gap: 18px;
-		margin-left: auto;
+	}
+
+	.networks-menu-link {
+		display: block;
 	}
 
 	.logo-icon {
@@ -146,7 +150,6 @@
 	.social-icons {
 		fill: transparent;
 		stroke: black;
-		margin-left: 14px;
 		transition: stroke 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67), transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 	}
 

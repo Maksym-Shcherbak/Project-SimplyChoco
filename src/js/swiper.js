@@ -5,7 +5,7 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 	loop: true,
 	direction: "horizontal",
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".reviews-swiper-pagination",
 		clickable: true,
 	},
 
