@@ -2,7 +2,9 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  const menuLinks = document.querySelectorAll(".menu-box-link");
+  const menuLinks = document.querySelectorAll('.menu-box-link');
+
+
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -25,5 +27,13 @@
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+
+
+  
+  });
+  
+  
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", toggleMenu);
   });
 })();
