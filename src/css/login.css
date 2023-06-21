@@ -2,18 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
 /* End Fonts */
 
-/* @font-face {
-	font-family: "FontAwesome";
-	src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-	src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
-		url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
-		url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
-		url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
-		url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
-	font-weight: normal;
-	font-style: normal;
-} */
-
 /* Start body rules */
 .overlay {
 	position: fixed;
@@ -216,4 +204,10 @@ input[id="txt-input"] {
 .register-btn:hover,
 .register-btn:focus .icon-login {
 	fill: var(--brand-color);
+}
+
+@media screen and (max-width: 1199px) {
+	.icon-login {
+		display: none;
+	}
 }

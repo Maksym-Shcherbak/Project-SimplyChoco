@@ -132,6 +132,11 @@
 			url(/img/subscribe-img/subcribe@2x.webp);
 	}
 }
+
+[data-aos="zoom-out"] {
+	transform: scale(1.1);
+}
+
 /* <------Backdrop-------> */
 
 body.modal-open {
@@ -181,7 +186,6 @@ body.modal-open {
 	align-items: center;
 	background-color: transparent;
 	border: none;
-	
 }
 
 .sub-bg-photo {
@@ -194,12 +198,10 @@ body.modal-open {
 	transition: stroke 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67), transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-
 .sub-modal-button:hover .sub-modal-close-icon {
 	transform: scale(2);
-	stroke: var(--brand-color)
+	stroke: var(--brand-color);
 }
-
 
 .sub-modal-title {
 	font-weight: 600;
