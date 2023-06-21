@@ -186,13 +186,11 @@
 
 	.unique-paragraf {
 		max-width: 486px;
-		/* max-height: 72px; */
 	}
 	.unique-header {
 		font-size: 24px;
 		line-height: 28px;
 		max-width: 411px;
-		/* max-height: 56px; */
 	}
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -218,11 +216,7 @@
 }
 @media screen and (min-width: 1200px) {
 	.unique-list {
-		/* display: flex;
-		flex-direction: row; */
 		flex-wrap: nowrap;
-		/* justify-content: center;
-		gap: 19px; */
 	}
 	.unique-list-item {
 		flex-basis: calc((100% - 57px) / 4);
