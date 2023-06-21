@@ -1,135 +1,150 @@
-html {
-	scroll-behavior: smooth;
-}
-footer {
+.page-footer {
 	color: var(--white-text);
 	background-color: var(--dark-background);
+	padding: 32px 0;
 }
 
 .footer-choco {
 	font-weight: 500;
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 1.17;
 	letter-spacing: -0.02em;
-	padding: 32px 0;
-}
-.svg-soc {
-	fill: transparent;
-	stroke: var(--white-text);
-	margin-left: 14px;
-}
-.svg-soc:hover {
-	fill: transparent;
-	stroke: var(--brand-color);
-}
-.svg-soc:focus {
-	fill: transparent;
-	stroke: var(--brand-color);
-}
-.choco {
-	color: var(--brand-color);
-}
-@media screen and (min-width: 768px) {
-	.adopt {
-		display: flex;
-	}
-	.footer-choco {
-		padding-top: 50px;
-		width: 300px;
-		height: 68px;
-		font-size: 28px;
-		line-height: 34px;
-		justify-content: flex-start;
-	}
-	.svg-soc {
-		margin-left: 18px;
-		width: 24px;
-		height: 24px;
-	}
+	max-width: 300px;
 }
 
-@media screen and (min-width: 1200px) {
+.choco-span {
+	color: var(--brand-color);
 }
-.list {
-	font-style: normal;
+
+.contact-us {
+	display: flex;
+	justify-content: space-between;
 }
-.list li:last-child {
-	padding-top: 4px;
-	padding-bottom: 32px;
+
+.adopt {
+	margin-bottom: 32px;
+}
+
+.footer-address-item:not(:last-child) {
+	margin-bottom: 4px;
 }
 
 .footer-maintext {
+	font-style: normal;
+	font-weight: 500;
+	margin-bottom: 14px;
 	font-size: 14px;
-	line-height: 18px;
-	letter-spacing: -0.02em;
+	line-height: 1.29;
+}
 
+.footer-address-link {
+	font-family: inherit;
+	font-style: normal;
 	font-weight: 400;
-	padding-bottom: 14px;
-}
-.social-link {
-	display: flex;
-}
-@media screen and (min-width: 768px) {
-	.social-link {
-		margin-left: auto;
-		padding-top: 50px;
-	}
-	.list {
-		margin-right: 50px;
-	}
-}
-.adress {
 	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	letter-spacing: -0.02em;
-}
-.adress:hover{
-	color: var(--brand-color);
-}
-.adress:focus{
-	color: var(--brand-color);
-}
-.social {
-	display: flex;
-	margin-left: auto;
-}
-.social-li {
-	margin-left: auto;
+	line-height: 1.29;
+	transition: color 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-hr {
-	margin: 0;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	transform: rotate(180deg);
+.footer-address-link:hover,
+.footer-address-link:focus {
+	color: var(--brand-color);
 }
-.yank {
-	padding-top: 32px;
-	padding-bottom: 32px;
+
+.footer-social-list {
+	display: flex;
+	gap: 14px;
+}
+
+.svg-soc {
+	fill: transparent;
+	stroke: var(--white-text);
+	transition: stroke 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.svg-soc:hover,
+.svg-soc:focus {
+	stroke: var(--brand-color);
+}
+
+.line {
+	margin: 0;
+	margin-bottom: 32px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.yank-item:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.yank-link {
+	font-family: inherit;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.14;
 	letter-spacing: -0.02em;
+	transition: color 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-.yank li:not(:last-child) {
-	padding-bottom: 18px;
+
+.yank-link:hover,
+.yank-link:focus {
+	color: var(--brand-color);
+}
+
+@media screen and (max-width: 767px) {
+	.footer-choco {
+		margin-bottom: 32px;
+	}
+		
 }
 
 @media screen and (min-width: 768px) {
+	.page-footer {
+		padding: 50px 0;
+	}
+
+	.adopt {
+		display: flex;
+		gap: 124px;
+		margin-bottom: 50px;
+	}
+
+	.contact-us {
+		gap: 50px;
+	}
+
+	.footer-choco {
+		font-size: 28px;
+		line-height: 1.21;
+	}
+
+	.footer-social-list {
+		gap: 18px;
+	}
+
+	.svg-soc {
+		transform: scale(1.09);
+	}
+
 	.yank {
 		display: flex;
 		gap: 24px;
 	}
-	.inst {
-		background-image: url("/img/icon/icons.svg#icon-instagram-d-t-24");
+	.line {
+			margin-bottom: 24px;
+		}
+}
+
+@media screen and (min-width: 1200px) {
+	.adopt {
+		justify-content: space-between;
+		margin-bottom: 62px;
 	}
-	.twit {
-		background-image: url("/img/icon/icons.svg#icon-twitter-d-t-24");
+
+	.contact-us {
+		gap: 62px;
 	}
 }
-.yak-link:hover{
-	color: var(--brand-color);
-}
-.yak-link:focus{
-	color: var(--brand-color);
+.footer-social-link {
+	display: block;
 }
