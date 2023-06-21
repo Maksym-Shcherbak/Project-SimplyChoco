@@ -1,32 +1,3 @@
-/* опис МОБІЛЬНОІ ВЕРСІІ */
-/* .container {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-@media screen and (min-width: 375px) {
-	.container {
-		max-width: 320px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.unique-container {
-		margin: 0 auto;
-		padding-bottom: 128px;
-	}
-	.unique-list {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 19px;
-	}
-
-	.unique-header {
-		max-width: 283px;
-		max-height: 72px;
-	}
-} */
-
 .unique {
 	padding: 72px 0;
 	background-color: var(--light-background);
@@ -35,7 +6,7 @@
 	.unique-list-item {
 		margin-bottom: 20px;
 	}
-	.unique-list-item :last-child {
+	.unique-list-item-last {
 		margin-bottom: 0;
 	}
 }
@@ -94,7 +65,7 @@
 	height: 100%;
 	overflow: auto;
 	transform: translate(0, 100%);
-	padding: 20px;
+	padding: 28px;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .unique-card-link:hover .unique-overlay,
@@ -120,17 +91,25 @@
 	letter-spacing: -0.03em;
 	text-transform: uppercase;
 	color: #111111;
-	margin-bottom: 8px;
+	margin-bottom: 48px;
 	text-align: start;
 }
 .unique-btns-overlay {
-	margin-bottom: 14px;
+	position: absolute;
+	top: 56px;
+	left: 28px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	padding: 0px;
 	gap: 6px;
 }
+@media screen and (min-width: 280px) and (max-width: 374px) {
+	.unique-btns-overlay-last {
+		top: 72px;
+	}
+}
+
 .unique-btn-overlay {
 	display: flex;
 	align-items: center;
@@ -186,13 +165,11 @@
 
 	.unique-paragraf {
 		max-width: 486px;
-		/* max-height: 72px; */
 	}
 	.unique-header {
 		font-size: 24px;
 		line-height: 28px;
 		max-width: 411px;
-		/* max-height: 56px; */
 	}
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -229,5 +206,14 @@
 	}
 	.unique-overlay-img-wrapper {
 		padding: 28px 36px 82px 28px;
+	}
+	.unique-overlay {
+		padding: 20px;
+	}
+	.unique-btns-overlay {
+		left: 20px;
+	}
+	.unique-btns-overlay-last {
+		top: 72px;
 	}
 }
