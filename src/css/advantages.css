@@ -84,18 +84,17 @@
 	}
 }
 /* +++++++++++++++++++++++++/DESKTOP++++++++++++++++++++ */
-@media screen {
-	html:not(.no-js) {
-		[data-aos^="rotate-in"][data-aos^="rotate-in"] {
-			backface-visibility: visible;
-			transition-property: transform;
-			transition-duration: 3s;
-		}
-		[data-aos="rotate-in"] {
-			transform: perspective(2500px) rotateX(100deg);
-			&.aos-animate {
-				transform: perspective(2500px) rotateX(0);
-			}
-		}
+
+.advantages-general-icon {
+	animation: bshit 3s infinite linear;
+}
+
+@keyframes bshit {
+	from {
+		transform: rotateY(0);
+	}
+
+	to {
+		transform: rotateY(360deg);
 	}
 }
