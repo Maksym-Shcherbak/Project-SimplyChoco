@@ -201,6 +201,10 @@ input[id="txt-input"] {
 	padding-bottom: 12px;
 }
 
+.icon-login {
+	transition: fill 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .register-btn:hover,
 .register-btn:focus .icon-login {
 	fill: var(--brand-color);
