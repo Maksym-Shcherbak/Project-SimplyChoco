@@ -158,7 +158,7 @@ input[id="txt-input"] {
 /* Submits */
 .submits {
 	width: 48%;
-	display: inline-block;
+	display: block;
 	float: left;
 	margin-left: 2%;
 }
