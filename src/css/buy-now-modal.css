@@ -1,0 +1,288 @@
+.backdrop-buy-now {
+	position: fixed;
+	overflow: scroll;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(246, 207, 140, 0.8);
+	z-index: 100;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-now-modal {
+	width: 311px;
+	border-radius: 15px;
+	margin: 0 auto;
+	background-color: var(--light-background);
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	padding: 32px 24px;
+}
+
+.buy-now-close-btn {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buy-now-close-btn-x {
+	stroke: #111;
+}
+
+.buy-now-title {
+	text-align: center;
+	margin-bottom: 32px;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.buy-now-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.chocolate-choose {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+	margin-bottom: 32px;
+	width: 100%;
+}
+
+.chocolate-choose-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.milk-chocolade-choose {
+	border: 1px solid rgba(17, 17, 17, 0.1);
+	border-radius: 15px;
+	width: 100%;
+	height: 85px;
+	background-color: var(--white-text);
+	padding: 8px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chocolate-weigth {
+	padding: 6px 16px;
+	background: var(--light-background);
+	border: 1px solid var(--border);
+	border-radius: 100px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.visually-hidden:checked + .milk-chocolade-choose {
+	background-color: var(--dark-background);
+}
+
+.personal-info-label {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	margin-bottom: 8px;
+}
+
+.personal-info-input {
+	width: 100%;
+	padding: 14px 18px;
+	font-size: 14px;
+	border: 1.5px solid rgba(17, 17, 17, 0.05);
+	filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+	border-radius: 8px;
+	outline: transparent;
+}
+
+.personal-info-input::placeholder {
+	color: rgba(64, 64, 64, 0.3);
+}
+
+.personal-info-input:focus {
+	border-color: var(--brand-color);
+}
+
+.form-inputs {
+	width: 100%;
+	margin-bottom: 18px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+}
+
+.phone-number {
+	position: relative;
+	width: 100%;
+	margin-bottom: 18px;
+}
+
+.ukraine-phone {
+	position: absolute;
+	top: 50%;
+	left: 18px;
+	transform: translateY(-50%);
+	font-weight: 500;
+	font-size: 14px;
+	display: flex;
+	column-gap: 8px;
+	padding-right: 8px;
+	border-right: 1px solid var(--border);
+}
+
+.input-phone-number {
+	padding-left: 106px;
+}
+
+.mastercard {
+	position: relative;
+	width: 100%;
+	margin-bottom: 18px;
+}
+
+.mastercard-logo {
+	position: absolute;
+	top: 50%;
+	right: 14px;
+	transform: translateY(-50%);
+}
+
+.comment-textarea {
+	height: 91px;
+	resize: none;
+}
+
+.comment-textarea::placeholder {
+	font-family: "Montserrat", sans-serif;
+}
+
+.buy-now-btn-submit {
+	color: var(--white-text);
+	background-color: var(--brand-color);
+	border-radius: 100px;
+	border: 0;
+	padding: 12px 28px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 30px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-now-btn-submit:hover,
+.buy-now-btn-submit:focus {
+	background-color: var(--pressed-state);
+	color: var(--brand-color);
+}
+
+@media screen and (max-width: 375px) {
+	.buy-now-modal {
+		width: 83%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.buy-now-close-btn {
+		top: 24px;
+		right: 24px;
+	}
+
+	.buy-now-modal {
+		min-width: 609px;
+		padding: 48px 48px;
+	}
+
+	.chocolate-choose {
+		flex-direction: row;
+		column-gap: 16px;
+	}
+
+	.milk-chocolade-choose {
+		flex-direction: column;
+		padding: 24px 20px 18px;
+		height: 100%;
+	}
+
+	.chocolate-weigth {
+		margin-top: 14px;
+		padding: 8px 29px;
+	}
+
+	.name-surname {
+		column-gap: 21px;
+		flex-direction: row;
+	}
+
+	.personal-info-label {
+		font-size: 14px;
+	}
+
+	.personal-info-input {
+		padding: 24px 22px;
+		font-size: 18px;
+	}
+
+	.input-phone-number {
+		padding-left: 177px;
+	}
+
+	.ukraine-phone {
+		font-size: 18px;
+		column-gap: 18px;
+		padding-right: 32px;
+		border-right: 2px solid var(--border);
+		align-items: center;
+	}
+
+	.ukraine-phone svg {
+		width: 32px;
+		height: 32px;
+	}
+
+	.mastercard-logo {
+		right: 24px;
+		width: 44px;
+		height: 30px;
+	}
+
+	.name-surname .personal-info-input {
+		width: calc((100% - 21px) / 2);
+	}
+
+	.comment-textarea {
+		height: 137px;
+	}
+
+	.buy-now-btn-submit {
+		padding: 14px 40px;
+	}
+}

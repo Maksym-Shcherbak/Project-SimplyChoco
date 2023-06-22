@@ -1,0 +1,67 @@
+<div class="backdrop is-hidden" data-modal="modal-2">
+	<div class="review-modal">
+		<button type="button" class="modal-close-but" data-modal-close>
+			<svg class="modal-close-icon-but">
+				<use href="/img/icon/icons.svg#icon-x-close-modal"></use>
+			</svg>
+		</button>
+		<h2 class="review-modal-title">
+			leave a review about
+			<span class="reviews-title-span">our chocolate</span>
+		</h2>
+		<form class="review-form form">
+			<div class="form-inputs">
+				<input
+					type="text"
+					minlength="3"
+					maxlength="30"
+					pattern="[A-Za-z\s]+"
+					required
+					class="info-input"
+					placeholder="Name"
+					id="name"
+					name="name"
+				/>
+			</div>
+			<div class="form-inputs">
+				<input
+					type="email"
+					minlength="3"
+					maxlength="30"
+					required
+					class="info-input"
+					placeholder="Enter your email"
+					id="email"
+					name="client-email"
+				/>
+			</div>
+			<div class="phone-number">
+				<input
+					type="tel"
+					minlength="9"
+					maxlength="9"
+					pattern="[0-9]+"
+					required
+					class="info-input input-phone-number"
+					placeholder="Phone number"
+					id="phone-number"
+					name="phone-number"
+				/>
+				<div class="ukraine-phone">
+					<svg class="ukraine-phone-icon">
+						<use href="/img/icon/icons.svg#icon-ukraine"></use>
+					</svg>
+					<span>+380</span>
+				</div>
+			</div>
+			<textarea
+				class="info-input comment-textarea"
+				id="purchase-comment-review"
+				name="msg"
+				maxlength="140"
+				placeholder="Enter text"
+			></textarea>
+			<button type="submit" class="btn-send">Send</button>
+		</form>
+	</div>
+</div>

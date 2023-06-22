@@ -1,0 +1,321 @@
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	height: 100%;
+	max-width: 295px;
+	padding-bottom: 20px;
+}
+
+.hero {
+	background-color: var(--white-text);
+	padding-bottom: 65px;
+	margin: 0 auto;
+}
+
+.hero-container-img {
+	height: 620px;
+	max-width: 335px;
+	border-radius: 30px;
+	background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+		url("../img/hero/hero-mobile.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	color: var(--white-text);
+
+	margin-bottom: 32px;
+	max-width: 290px;
+}
+
+.hero-btn-list {
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 32px;
+}
+
+.hero-btn-list-item:first-child {
+	margin-right: 14px;
+}
+
+.hero-btn-buy-now {
+	padding: 12px 28px;
+	min-width: 120px;
+	min-height: 41px;
+
+	font-style: normal;
+	color: var(--white-text);
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.21;
+	background-color: #fd9222;
+	border-radius: 100px;
+	border: none;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-buy-now:hover,
+.hero-btn-buy-now:focus {
+	color: var(--brand-color);
+	background-color: var(--pressed-state);
+}
+
+.hero-btn-how-it {
+	padding: 12px 28px;
+	min-width: 159px;
+	min-height: 41px;
+
+	font-style: normal;
+	color: var(--white-text);
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.21;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 100px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-how-it:hover,
+.hero-btn-how-it:focus {
+	color: var(--brand-color);
+	border: 1px solid #fd9222;
+	background-color: var(--white-text);
+}
+
+.btn-list-item {
+	max-width: 108px;
+}
+
+.hero-btn-scroll {
+	display: flex;
+	align-items: center;
+
+	padding: 0px;
+	min-width: 107px;
+	min-height: 28px;
+
+	font-style: normal;
+	color: var(--white-text);
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: -0.03em;
+	background-color: transparent;
+	border: none;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-list-item-icon-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+
+	margin-left: 12px;
+	background-color: var(--white-text);
+	border-radius: 50%;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-list-item-icon {
+	width: 16px;
+	height: 16px;
+	fill: var(--brand-color);
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-scroll:hover,
+.hero-btn-scroll:focus {
+	color: var(--brand-color);
+}
+
+.hero-btn-scroll:hover .hero-btn-list-item-icon,
+.hero-btn-scroll:focus .hero-btn-list-item-icon {
+	fill: var(--white-text);
+}
+
+.hero-btn-scroll:hover .hero-btn-list-item-icon-container,
+.hero-btn-scroll:focus .hero-btn-list-item-icon-container {
+	fill: var(--white-text);
+	background-color: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+	.hero .container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.hero {
+		padding-bottom: 50px;
+	}
+
+	.hero-container-img {
+		height: 890px;
+		max-width: 704px;
+	}
+
+	.hero-container {
+		max-width: 100%;
+		padding-bottom: 40px;
+	}
+
+	.hero-title {
+		max-width: 484px;
+
+		font-size: 28px;
+		line-height: 1.21;
+		white-space: pre-line;
+	}
+
+	.container-hero-btn-list {
+		display: flex;
+		align-items: center;
+	}
+
+	.hero-btn-list {
+		flex-wrap: nowrap;
+		margin-bottom: 0;
+	}
+
+	.btn-list-item {
+		margin-left: auto;
+		min-width: 130px;
+
+	}
+
+	.hero-btn-buy-now {
+		padding: 14px 40px;
+		min-width: 144px;
+		min-height: 45px;
+	}
+
+	.hero-btn-how-it {
+		padding: 14px 40px;
+		min-width: 183px;
+		min-height: 45px;
+	}
+
+	.hero-btn-scroll {
+		font-size: 14px;
+		line-height: 1.29;
+	}
+
+	.hero-btn-list-item-icon-container {
+		width: 38px;
+		height: 38px;
+	}
+
+	.hero-btn-list-item-icon {
+		width: 22px;
+		height: 22px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.hero {
+		padding-bottom: 72px;
+	}
+
+	.hero-container-img {
+		height: 600px;
+		max-width: 1136px;
+	}
+
+
+}
+
+@media screen and (max-width: 374px) {
+	.hero-container-img {
+		max-width: 280px;
+	}
+
+	.hero-btn-list {
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 32px;
+	}
+
+	.hero-btn-list-item:first-child {
+		margin-right: 0;
+		margin-bottom: 32px;
+	}
+
+	.hero-btn-how-it {
+		width: 130px;
+	}
+
+	.btn-list-item {
+		margin: 0 auto;
+		max-width: 108px;
+	}
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
+screen and (min-resolution: 192dpi) and (min-width: 375px),
+screen and (min-resolution: 2dppx) and (min-width: 375px) {
+	.hero-container-img {
+		background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+			url("../img/hero/hero-mobile@2x.jpg");
+	}
+}
+
+/* 768px */
+@media screen and (min-width: 768px) {
+	.hero-container-img {
+		background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+			url("../img/hero/hero-tablet.jpg");
+	}
+}
+
+/* 
+768px +
+2x
+*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.hero-container-img {
+		background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+			url("../img/hero/hero-tablet@2x.jpg");
+	}
+}
+
+/* 1200px */
+@media screen and (min-width: 1200px) {
+	.hero-container-img {
+		background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+			url("../img/hero/hero-desktop.jpg");
+	}
+}
+
+/* 
+1200 +
+2x
+*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+	.hero-container-img {
+		background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+			url("../img/hero/hero-desktop@2x.jpg");
+	}
+}

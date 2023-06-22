@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$(".menu a").click(function (e) {
+	$(".hero-btn-list a, .mobile-navi-link, .menu-link, .back-to-top, .yank-link, .hero-btn-scroll").click(function (e) {
 		if ($(this).attr("href").indexOf("#") != -1) {
 			// Проверяем, является и ссылка действительно якорной ссылкой.
 			e.preventDefault(); // Отменяем событие перехода.
@@ -10,8 +10,14 @@ $(document).ready(function () {
 				var tophref = $("body")
 					.find("#" + href)
 					.offset().top; // Получаем координаты элемента, относительно начала страницы.
-				$("html, body").animate({ scrollTop: tophref }, 800); // Создаём анимацию скрола к нужному элементу.
+				$("html, body").animate({ scrollTop: tophref }, 2500); // Создаём анимацию скрола к нужному элементу.
 			}
 		}
 	});
+});
+
+// initialization of aos
+AOS.init({
+	once: false,
+	mirror: true,
 });

@@ -1,0 +1,50 @@
+<div class="subscribe-backdrop is-hidden" id="modal" data-modal="modal-3">
+	<div class="subscribe-modal">
+		<picture>
+			<source
+				srcset="
+					/img/subscribe-img/subcribe-modal/sub-modal-bg-desk.webp    1x,
+					/img/subscribe-img/subcribe-modal/sub-modal-bg-desk@2x.webp 2x
+				"
+				media="(min-width: 768px)"
+			/>
+			<source
+				srcset="
+					/img/subscribe-img/subcribe-modal/sub-modal-bg-mob.webp    1x,
+					/img/subscribe-img/subcribe-modal/sub-modal-bg-mob@2x.webp 2x
+				"
+				media="(min-width: 280px)"
+			/>
+			<img
+				class="sub-bg-photo"
+				src="/img/subscribe-img/subcribe-modal/sub-modal-bg-desk.webp"
+				alt="modal-bg-chocolate"
+			/>
+		</picture>
+		<button class="sub-modal-button" type="button" data-modal-close>
+			<svg class="sub-modal-close-icon" aria-label="icon-x-close" width="28" height="28">
+				<use href="/img/icon/icons.svg#icon-x-close"></use>
+			</svg>
+		</button>
+		<div class="subscribe-modal-form">
+			<h2 class="sub-modal-title">
+				EXPLORE OUR
+				<br />
+				<span class="sub-modal-accent-title">NEW CHOCOLATE</span>
+				FIRST!
+			</h2>
+			<form class="subscribe-form">
+					<input
+						class="subscribe-input-form"
+						type="email"
+						name="email"
+						id="user_email"
+						placeholder="Enter your email"
+						pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+						required
+					/>
+				<button class="subscribe-modal-btn" type="submit">Subscribe</button>
+			</form>
+		</div>
+	</div>
+</div>

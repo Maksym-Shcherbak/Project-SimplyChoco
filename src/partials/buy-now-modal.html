@@ -1,0 +1,153 @@
+<div class="backdrop-buy-now is-hidden" data-modal="modal-1">
+	<div class="buy-now-modal">
+		<button type="button" class="buy-now-close-btn" data-modal-close>
+			<svg class="buy-now-close-btn-x" width="24" height="24">
+				<use href="/img/icon/icons.svg#icon-x-close"></use>
+			</svg>
+		</button>
+		<h2 class="buy-now-title">
+			<span class="reviews-title-span">Buy</span>
+			now
+		</h2>
+		<form class="buy-now-form">
+			<ul class="chocolate-choose">
+				<li class="chocolate-choose-item">
+					<input type="checkbox" class="visually-hidden" id="milk-chocolade" name="milk-chocolade" />
+					<label for="milk-chocolade" class="milk-chocolade-choose">
+						<picture>
+							<source
+								media="(max-width: 767px)"
+								srcset="/img/buy-now-modal/milk-chocolade.webp 1x, /img/buy-now-modal/milk-chocolade@2x.webp 2x"
+							/>
+
+							<source
+								media="(min-width: 768px)"
+								srcset="/img/buy-now-modal/milk-chocolade-tab.webp 1x, /img/buy-now-modal/milk-chocolade-tab@2x.webp 2x"
+							/>
+							<img src="/img/buy-now-modal/milk-chocolade.webp" alt="Milk chocolate" />
+						</picture>
+						<span class="chocolate-weigth">100 g</span>
+					</label>
+				</li>
+				<li class="chocolate-choose-item">
+					<input
+						type="checkbox"
+						class="visually-hidden"
+						id="white-and-dark-chocolate"
+						name="white-and-dark-chocolate"
+					/>
+					<label for="white-and-dark-chocolate" class="milk-chocolade-choose">
+						<picture>
+							<source
+								media="(max-width: 767px)"
+								srcset="
+									/img/buy-now-modal/white-and-dark-chocolade.webp    1x,
+									/img/buy-now-modal/white-and-dark-chocolade@2x.webp 2x
+								"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcset="
+									/img/buy-now-modal/white-and-dark-chocolade-tab.webp    1x,
+									/img/buy-now-modal/white-and-dark-chocolade-tab@2x.webp 2x
+								"
+							/>
+							<img src="/img/buy-now-modal/white-and-dark-chocolade.webp" alt="White and Dark Chocolate" />
+						</picture>
+						<span class="chocolate-weigth">200 g</span>
+					</label>
+				</li>
+				<li class="chocolate-choose-item">
+					<input type="checkbox" class="visually-hidden" id="dark-chocolate" name="milk-chocolade-choose" />
+					<label for="dark-chocolate" class="milk-chocolade-choose">
+						<picture>
+							<source
+								media="(max-width: 767px)"
+								srcset="/img/buy-now-modal/dark-chocolade.webp 1x, /img/buy-now-modal/dark-chocolade@2x.webp 2x"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcset="/img/buy-now-modal/dark-chocolade-tab.webp 1x, /img/buy-now-modal/dark-chocolade-tab@2x.webp 2x"
+							/>
+							<img src="/img/buy-now-modal/dark-chocolade.webp" alt="Dark Chocolate" />
+						</picture>
+						<span class="chocolate-weigth">300 g</span>
+					</label>
+				</li>
+			</ul>
+			<label for="client-name" class="personal-info-label">Personal information</label>
+			<div class="form-inputs name-surname">
+				<input
+					type="text"
+					class="personal-info-input"
+					placeholder="Name"
+					id="client-name"
+					name="client-name"
+					pattern="[A-Za-z\s]+"
+					required
+				/>
+				<input
+					type="text"
+					class="personal-info-input"
+					placeholder="Surname"
+					name="client-surname"
+					pattern="[A-Za-z\s]+"
+					required
+				/>
+			</div>
+			<label for="clientEmail" class="personal-info-label">Email</label>
+			<div class="form-inputs">
+				<input
+					class="personal-info-input"
+					placeholder="Enter your email"
+					id="clientEmail"
+					name="client-email"
+					type="email"
+					pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+					required
+				/>
+			</div>
+			<label for="clientPhoneNumber" class="personal-info-label">Phone number</label>
+			<div class="phone-number">
+				<input
+					type="tel"
+					class="personal-info-input input-phone-number"
+					placeholder="Phone number"
+					id="clientPhoneNumber"
+					name="client-phone-number"
+					maxlength="12"
+					required
+				/>
+				<div class="ukraine-phone">
+					<svg width="24" height="24">
+						<use href="/img/icon/icons.svg#icon-ukraine"></use>
+					</svg>
+					<span>+380</span>
+				</div>
+			</div>
+			<label for="clientCardNumber" class="personal-info-label" id="client-phone-number">Card number</label>
+			<div class="mastercard">
+				<input
+					type="tel"
+					class="personal-info-input"
+					placeholder="Enter card"
+					id="clientCardNumber"
+					name="client-card-number"
+					maxlength="19"
+					required
+				/>
+				<svg class="mastercard-logo" width="32" height="21">
+					<use href="/img/icon/icons.svg#icon-mastercard"></use>
+				</svg>
+			</div>
+			<label for="purchase-comment" class="personal-info-label">Comment</label>
+			<textarea
+				class="personal-info-input comment-textarea"
+				name="purchase-comment"
+				id="purchase-comment"
+				placeholder="Enter text"
+			></textarea>
+			<button type="submit" class="buy-now-btn-submit">Submit</button>
+		</form>
+	</div>
+</div>

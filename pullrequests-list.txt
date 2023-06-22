@@ -3,3 +3,8 @@ https://github.com/Maksym-Shcherbak/Project-SimplyChoco/pull/4
 https://github.com/Maksym-Shcherbak/Project-SimplyChoco/pull/4/commits/762ec85fb03c7da2647b71bd82f4ab059d5d9b1e
 https://github.com/Maksym-Shcherbak/Project-SimplyChoco/pull/4/commits
 https://github.com/Maksym-Shcherbak/Project-SimplyChoco/pull/4/commits/ec3453cc0edbe60331a5bc6cabbc045d9b483820
+
+https://github.com/Maksym-Shcherbak/Project-SimplyChoco/compare/main...advantages2-html?expand=1
+https://github.com/Maksym-Shcherbak/Project-SimplyChoco/pull/16
+https://github.com/Maksym-Shcherbak/Project-SimplyChoco/commit/11a135178ababd1990e59388b08da48e18b4
+https://github.com/Maksym-Shcherbak/Project-SimplyChoco/compare/main...advantages3-html?expand=1
