@@ -18,6 +18,7 @@
 	letter-spacing: -0.03em;
 	color: #111111;
 	position: relative;
+	display: flex;
 }
 
 .logo-part-two {
