@@ -1,15 +1,17 @@
 /* +++++++++++++++++++++++++MOBILE++++++++++++++++++++ */
 .advantages {
 	background-color: var(--dark-background);
-	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 /* @media screen and (min-width: 375px) { */
-.advantages {
-	padding: 20px 0;
+
+.advantages-item:not(:last-child) {
+	margin-bottom: 32px;
 }
+
 .advantages-container {
 	max-width: 308px;
-	margin-bottom: 32px;
 }
 .advantages-general-icon {
 	display: flex;
@@ -74,7 +76,6 @@
 	line-height: 1.21;
 	letter-spacing: -0.02em;
 	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: 20px;
 }
 /* +++++++++++++++++++++++++/MOBILE++++++++++++++++++++ */
 
@@ -82,11 +83,9 @@
 @media screen and (min-width: 768px) {
 	.advantages {
 		padding-top: 50px;
-		padding-bottom: 85px;
+		padding-bottom: 50px;
 	}
-	.advantages-description {
-		margin-bottom: 0;
-	}
+
 	.advantages-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -97,11 +96,6 @@
 
 /* +++++++++++++++++++++++++DESKTOP++++++++++++++++++++ */
 @media screen and (min-width: 1200px) {
-	.advantages {
-		/* height: 344px; */
-		padding-left: 18px;
-		padding-right: 18px;
-	}
 	.advantages-list {
 		flex-wrap: nowrap;
 		gap: 88px;

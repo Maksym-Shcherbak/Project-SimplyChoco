@@ -29,7 +29,7 @@
 	margin-right: auto;
 }
 
-.instruction-item {
+.instruction-item-text {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.28;
@@ -37,14 +37,9 @@
 	color: #111111;
 }
 
-.instruction-list {
+.instruction-item {
 	list-style: disc;
-}
-
-.instruction-item::marker {
-	color: #4c4c4c;
-	border: 1px solid #eceded;
-	margin-top: 5px;
+	line-height: 0px;
 }
 
 .img-how-its-made {
@@ -66,6 +61,7 @@
 	border-radius: 50px;
 	border: 1px solid #ffffff;
 	background-color: rgba(0, 0, 0, 0);
+	display: inline-block;
 }
 
 .how-its-made-play-button:hover {
@@ -79,7 +75,37 @@
 	transition: border 250ms;
 }
 
-.pictures-how-its-made .how-its-made-play-button {
+#video-loading-circle-container {
+	width: 45px;
+	height: 45px;
+}
+
+.video-loading-circle {
+	height: 100%;
+	width: 100%;
+	right: 0px;
+	position: absolute;
+	border: solid 3px #ffffff;
+	border-top-color: var(--brand-color);
+	border-radius: 50%;
+	caret-color: transparent;
+
+	transform: rotate(135deg);
+	animation: spin 1.3s steps(2) 0.2s infinite;
+	-webkit-animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.pictures-how-its-made .how-its-made-play-button,
+#video-loading-circle-container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -88,10 +114,15 @@
 	cursor: pointer;
 }
 
+#how-its-made-video-player {
+	display: none;
+}
+
 .video-play-button {
-	margin-left: 8px;
+	margin: 10px 0 0 13px;
 	border-style: solid;
 	border-width: 10px 0 10px 21px;
+	background: none;
 	border-color: transparent transparent transparent #ffffff;
 }
 
@@ -101,11 +132,17 @@
 	transition: border-color 250ms;
 }
 
-#how-its-made-video-player {
-	display: none;
-}
-
 @media screen and (max-width: 767px) {
+	.section-instruction {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 14px;
+	}
+
+	.pictures-how-its-made {
+		margin-bottom: 20px;
+	}
+
 	.title-how-its-made {
 		font-size: 20px;
 		line-height: 1.2;
@@ -113,23 +150,20 @@
 	}
 
 	.title-instruction {
-		margin-top: 20px;
 		margin-bottom: 20px;
-		padding-top: 20px;
 		margin-left: 14px;
 	}
 
 	.instruction-item {
-		padding-bottom: 18px;
+		margin-bottom: 18px;
 		margin-left: 30px;
-		padding-right: 14px;
 	}
 
 	.instruction-item:last-child {
-		padding-bottom: 20px;
+		margin-bottom: 0;
 	}
 
-	.div-him {
+	.how-its-made {
 		padding-bottom: 72px;
 	}
 
@@ -146,24 +180,25 @@
 
 	.section-instruction {
 		width: 614px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 
 	.title-instruction {
 		width: 350px;
-		padding-top: 32px;
 		margin-left: 32px;
 		margin-bottom: 28px;
 	}
 
 	.instruction-item {
 		width: 550px;
-		padding-bottom: 18px;
+		margin-bottom: 18px;
 		margin-left: 48px;
 		padding-right: 70px;
 	}
 
 	.instruction-item:last-child {
-		padding-bottom: 32px;
+		margin-bottom: 0px;
 	}
 
 	.pictures-how-its-made {
@@ -174,7 +209,6 @@
 	}
 
 	.div-him {
-		padding-bottom: 100px;
 		width: 614px;
 		margin-right: auto;
 		margin-left: auto;
@@ -184,43 +218,51 @@
 		width: 614px;
 		height: 400px;
 	}
+
+	.how-its-made {
+		padding-bottom: 100px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
 	.div-him {
 		display: flex;
-		padding-bottom: 128px;
-	}
-
-	.title-how-its-made {
-		margin-bottom: 50px;
 	}
 
 	.section-instruction {
 		width: 516px;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		margin-left: 20px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	.title-how-its-made {
+		margin-bottom: 50px;
 	}
 
 	.title-instruction {
 		width: 350px;
-		margin-bottom: 28px;
-		margin-top: 32px;
 		margin-left: 32px;
+		margin-bottom: 28px;
 	}
 
 	.instruction-item {
 		width: 425px;
-		padding-bottom: 24px;
+		margin-bottom: 24px;
 		margin-left: 48px;
 	}
 
 	.instruction-item:last-child {
-		padding-bottom: 34px;
+		margin-bottom: 0px;
 	}
 
 	#how-its-made-video-player {
 		width: 600px;
 		height: 400px;
+	}
+
+	.how-its-made {
+		padding-bottom: 128px;
 	}
 }

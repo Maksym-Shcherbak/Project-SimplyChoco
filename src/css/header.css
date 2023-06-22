@@ -18,6 +18,9 @@
 	letter-spacing: -0.03em;
 	color: #111111;
 	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 4px;
 }
 
 .logo-part-two {
@@ -86,13 +89,6 @@
 	.mobile-menu-open-icon {
 		width: 24px;
 		height: 16px;
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-	.page-header .flex-container {
-		padding-top: 24px;
-		padding-bottom: 24px;
 	}
 }
 
