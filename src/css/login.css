@@ -211,7 +211,7 @@ input[id="txt-input"] {
 }
 
 @media screen and (max-width: 1199px) {
-	.icon-login {
+	.register-btn {
 		display: none;
 	}
 }

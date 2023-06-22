@@ -95,3 +95,7 @@ body.modal-open {
 		width: 1200px;
 	}
 }
+
+/* body {
+	overflow-x: hidden;
+} */
