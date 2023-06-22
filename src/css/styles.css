@@ -4,9 +4,7 @@
   | default @import url()
   |============================
 */
-@import url("./login.css");
 @import url("./reset.css");
-@import url("./scroll-up.css");
 @import url("./header.css");
 @import url("./mobile-menu.css");
 @import url("./hero.css");
@@ -22,6 +20,8 @@
 @import url("./explore-modal.css");
 @import url("./reviews-modal.css");
 @import url("./reviews-swiper.css");
+@import url("./login.css");
+@import url("./scroll-up.css");
 
 :root {
 	font-family: "Montserrat", sans-serif;
