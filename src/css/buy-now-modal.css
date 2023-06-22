@@ -5,7 +5,7 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(246, 207, 140, 0.8);
+	background-color: var(--backdrop);
 	z-index: 100;
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -35,7 +35,7 @@
 }
 
 .buy-now-close-btn-x {
-	stroke: #111;
+	stroke: var(--dark-text);
 }
 
 .buy-now-title {
@@ -79,7 +79,7 @@
 }
 
 .milk-chocolade-choose {
-	border: 1px solid rgba(17, 17, 17, 0.1);
+	border: 1px solid var(--border);
 	border-radius: 15px;
 	width: 100%;
 	height: 85px;
@@ -124,7 +124,7 @@
 }
 
 .personal-info-input::placeholder {
-	color: rgba(64, 64, 64, 0.3);
+	color: var(--placeholder);
 }
 
 .personal-info-input:focus {

@@ -16,7 +16,7 @@
 	font-size: 18px;
 	line-height: 20px;
 	letter-spacing: -0.03em;
-	color: #111111;
+	color: var(--dark-text);
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -25,7 +25,7 @@
 
 .logo-part-two {
 	font-style: normal;
-	color: #111111;
+	color: var(--dark-text);
 }
 
 .logo-icon {
@@ -112,7 +112,7 @@
 	}
 	.menu-link:hover,
 	.menu-link:focus {
-		color: #fd9222;
+		color: var(--brand-color);
 	}
 
 	.menu-list {
@@ -124,7 +124,7 @@
 		display: flex;
 		align-items: center;
 		letter-spacing: -0.02em;
-		color: #111111;
+		color: var(--dark-text);
 		gap: 24px;
 	}
 
@@ -145,12 +145,12 @@
 
 	.social-icons {
 		fill: transparent;
-		stroke: black;
+		stroke: var(--dark-text);
 		transition: stroke 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67), transform 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 	}
 
-	.social-icons:hover,
-	.social-icons:focus {
+	.networks-menu-link:hover .social-icons,
+	.networks-menu-link:focus .social-icons {
 		stroke: var(--brand-color);
 	}
 }

@@ -205,7 +205,7 @@ input[id="txt-input"] {
 	transition: fill 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.register-btn:hover,
+.register-btn:hover .icon-login,
 .register-btn:focus .icon-login {
 	fill: var(--brand-color);
 }
