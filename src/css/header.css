@@ -19,6 +19,8 @@
 	color: #111111;
 	position: relative;
 	display: flex;
+	align-items: center;
+	gap: 4px;
 }
 
 .logo-part-two {
