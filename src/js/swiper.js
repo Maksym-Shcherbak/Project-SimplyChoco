@@ -28,6 +28,11 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 			spaceBetween: 28,
 		},
 	},
+
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
 });
 
 const swip = new Swiper(".section-our-product .swiper", {
@@ -48,5 +53,10 @@ const swip = new Swiper(".section-our-product .swiper", {
 		1200: {
 			slidesPerView: 4,
 		},
+	},
+
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
 	},
 });

@@ -10,7 +10,7 @@ $(document).ready(function () {
 				var tophref = $("body")
 					.find("#" + href)
 					.offset().top; // Получаем координаты элемента, относительно начала страницы.
-				$("html, body").animate({ scrollTop: tophref }, 2500); // Создаём анимацию скрола к нужному элементу.
+				$("html, body").animate({ scrollTop: tophref }, 1900); // Создаём анимацию скрола к нужному элементу.
 			}
 		}
 	});

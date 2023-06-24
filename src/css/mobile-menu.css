@@ -7,6 +7,7 @@
 	height: 100%;
 	padding-top: 136px;
 	padding-left: 50px;
+	padding-bottom: 20px;
 	opacity: 0;
 	pointer-events: none;
 	z-index: 3;
@@ -79,9 +80,9 @@
 	color: var(--brand-color);
 }
 
-.mobile-navi-link::after{
-	content:'';
-	background-color: #FD9222;
+.mobile-navi-link::after {
+	content: "";
+	background-color: #fd9222;
 	border-radius: 1px;
 	width: 0;
 	height: 1px;
@@ -94,16 +95,22 @@
 .mobile-navi-link:hover::after,
 .mobile-navi-link:focus::after {
 	width: 24px;
-	
+}
+
+.menu-social-media {
+	display: flex;
+	align-items: flex-end;
+	gap: 18px;
 }
 
 .mob-ic-list {
-	position: absolute;
+	/* position: absolute;
 	left: 20px;
-	bottom: 20px;
+	bottom: 20px; */
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	margin-left: -30px;
 	padding: 0px;
 	gap: 18px;
 }
@@ -136,6 +143,24 @@
 
 .social-ic-link:is(:hover, :focus) > .social-icon {
 	stroke: var(--brand-color);
+}
+
+.register-btn-mobile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	background: transparent;
+}
+
+.icon-login-mobile {
+	fill: var(--white-text);
+	transition: fill 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.icon-login-mobile:hover,
+.icon-login-mobile:focus {
+	fill: var(--brand-color);
 }
 
 @media screen and (min-width: 768px) {

@@ -68,6 +68,7 @@
 	font-size: 250%;
 	font-family: "Playfair Display", serif;
 	color: #3e403f;
+	margin-bottom: 8px;
 }
 /*  A welcome message or an explanation of the login form */
 .head-form p {

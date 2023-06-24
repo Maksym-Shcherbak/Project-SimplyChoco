@@ -25,9 +25,16 @@
 	width: 200px;
 	margin: 0;
 	position: absolute;
-	left: 21%;
+	left: 50%;
 	top: -22%;
+	transform: translateX(-50%);
 }
+
+/* @media screen and (max-width: 374px) {
+	.reviewer {
+		left: 14%;
+	}
+} */
 
 .reviewer-photo {
 	margin: 0 auto;
