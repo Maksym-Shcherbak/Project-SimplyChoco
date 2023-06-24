@@ -107,7 +107,7 @@
 
 .yank-link:hover::after,
 .yank-link:focus::after {
-	width: 24px;
+	width: 100%;
 }
 
 @media screen and (max-width: 767px) {

@@ -94,7 +94,7 @@
 
 .mobile-navi-link:hover::after,
 .mobile-navi-link:focus::after {
-	width: 24px;
+	width: 100%;
 }
 
 .menu-social-media {
