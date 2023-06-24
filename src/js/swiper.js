@@ -3,6 +3,7 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 	slidesPerView: 1,
 	spaceBetween: 16,
 	loop: true,
+	grabCursor: true,
 	direction: "horizontal",
 	pagination: {
 		el: ".reviews-swiper-pagination",
@@ -37,8 +38,9 @@ const reviewsSwiper = new Swiper(".reviews .swiper", {
 
 const swip = new Swiper(".section-our-product .swiper", {
 	// Optional parameters
-	slidesPerView: 1,
+	slidesPerView: "auto",
 	spaceBetween: 18,
+	centeredSlides: "true",
 	loop: true,
 	direction: "horizontal",
 	pagination: {
@@ -46,15 +48,23 @@ const swip = new Swiper(".section-our-product .swiper", {
 		clickable: true,
 	},
 
-	breakpoints: {
-		768: {
-			slidesPerView: "auto",
-		},
-		1200: {
-			slidesPerView: 4,
-		},
+	effect: "coverflow",
+	coverflowEffect: {
+		rotate: 0,
+		slideShadows: false,
+		depth: 100,
+		modifier: 2.5,
+		stretch: 0,
 	},
 
+	breakpoints: {
+		// 768: {
+		// 	slidesPerView: "auto",
+		// },
+		// 1200: {
+		// 	slidesPerView: 4,
+		// },
+	},
 	autoplay: {
 		delay: 2500,
 		disableOnInteraction: false,
