@@ -73,8 +73,10 @@
 	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.yank-item:not(:last-child) {
-	margin-bottom: 18px;
+@media screen and (max-width: 767px) {
+	.yank-item:not(:last-child) {
+		margin-bottom: 18px;
+	}
 }
 
 .yank-link {
